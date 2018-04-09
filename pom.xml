@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.apache</groupId>
+		<artifactId>apache</artifactId>
+		<version>18</version>
+	</parent>
+	<groupId>com.beagle</groupId>
+	<artifactId>whale</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>whale-client</module>
+		<module>whale-core</module>
+		<module>whale-server</module>
+		<module>whale-test</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<calcite.avatica.version>1.6.0</calcite.avatica.version>
+		<avatica.version>1.11.0</avatica.version>
+		<calcite.version>1.7.0</calcite.version>
+		<netty.version>4.1.17.Final</netty.version>
+		<protobuf.version>3.5.1</protobuf.version>
+		<log4j.version>1.8.0-alpha2</log4j.version>
+	</properties>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.calcite/calcite-avatica -->
+		<dependency>
+			<groupId>org.apache.calcite</groupId>
+			<artifactId>calcite-avatica</artifactId>
+			<version>${calcite.avatica.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.calcite/calcite-avatica-server -->
+		<dependency>
+			<groupId>org.apache.calcite</groupId>
+			<artifactId>calcite-avatica-server</artifactId>
+			<version>${calcite.avatica.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.calcite.avatica/avatica-core -->
+		<dependency>
+			<groupId>org.apache.calcite.avatica</groupId>
+			<artifactId>avatica-core</artifactId>
+			<version>${avatica.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.calcite/calcite-core -->
+		<dependency>
+			<groupId>org.apache.calcite</groupId>
+			<artifactId>calcite-core</artifactId>
+			<version>${calcite.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.calcite</groupId>
+			<artifactId>calcite-linq4j</artifactId>
+			<version>${calcite.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>${protobuf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>${netty.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

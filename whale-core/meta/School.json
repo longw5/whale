@@ -1,0 +1,15 @@
+{
+  version: '1.0',
+  defaultSchema: 'school',
+  schemas: [
+    {      
+      type: 'custom',
+      name: 'school',
+      factory: 'org.whale.schame.WhaleSchameFactory',
+      operand: {
+        param1: 'hello',
+        param2: 'world'
+      }
+    }
+  ]
+}
