@@ -1,4 +1,5 @@
 org\whale\schame\WhaleSchame.class
+org\whale\data\WhaleData.class
 org\whale\data\MemoryData.class
 org\whale\table\MemoryTable$1.class
 org\whale\data\MemoryEnumerator.class
