@@ -12,5 +12,4 @@ public class WhaleSchameFactory implements SchemaFactory{
 	public Schema create(SchemaPlus parentSchema, String name, Map<String, Object> operand) {
 		return new WhaleSchame(name);
 	}
-
 }
