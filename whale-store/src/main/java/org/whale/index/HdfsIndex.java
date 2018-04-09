@@ -16,18 +16,8 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.search.BooleanClause;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopDocs;
-import org.apache.lucene.search.highlight.Highlighter;
-import org.apache.lucene.search.highlight.QueryScorer;
-import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
-import org.apache.lucene.search.highlight.SimpleSpanFragmenter;
 import org.apache.solr.store.hdfs.HdfsDirectory;
 
 public class HdfsIndex {
@@ -36,7 +26,7 @@ public class HdfsIndex {
 
 	public static void main(String[] args) throws Exception {
 		
-		File file = new File("E://lucene/src2");
+		File file = new File("E://lucene/nginx");
 		
 		//建索引
 		createIndex(info, file);
@@ -50,10 +40,11 @@ public class HdfsIndex {
 		Configuration conf = new Configuration();
 
 		conf.set("fs.defaultFS", "hdfs://hadoop:8020");
+		conf.set("fs.hdfs.impl",org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());  
 		
         FileSystem fs = FileSystem.get(conf);
 		
-        Path indexPath = new Path("/lucene/demo");
+        Path indexPath = new Path("/lucene/nginx");
         if (!fs.exists(indexPath)) {
             fs.mkdirs(indexPath);
         }

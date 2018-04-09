@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.apache</groupId>
@@ -15,9 +17,9 @@
 		<module>whale-core</module>
 		<module>whale-server</module>
 		<module>whale-test</module>
-    <module>whale-store</module>
-    <module>whale-bulkload</module>
-  </modules>
+		<module>whale-store</module>
+		<module>whale-bulkload</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,18 +29,6 @@
 		<netty.version>4.1.17.Final</netty.version>
 		<protobuf.version>3.5.1</protobuf.version>
 		<log4j.version>1.8.0-alpha2</log4j.version>
-		
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<junit.version>4.12</junit.version>
-
-		<hadoop.version>2.7.3</hadoop.version>
-		<lucene.version>6.3.0</lucene.version>
-		<solr.version>6.3.0</solr.version>
-		<hbase.version>1.2.4</hbase.version>
-		<lzo.version>1.0.5</lzo.version>
-		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.project.outputEncoding>UTF-8</project.project.outputEncoding>
 	</properties>
 
 	<dependencies>
@@ -70,7 +60,7 @@
 			<artifactId>calcite-core</artifactId>
 			<version>${calcite.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.calcite</groupId>
 			<artifactId>calcite-linq4j</artifactId>
@@ -94,198 +84,6 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${log4j.version}</version>
 		</dependency>
-		
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-core</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-		<!--一般分词器，适用于英文分词 -->
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-analyzers-common</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-		<!--中文分词器 -->
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-analyzers-smartcn</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-
-		<!--对分词索引查询解析 -->
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-queryparser</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-		<!--检索关键字高亮显示 -->
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-highlighter</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-memory -->
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-memory</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-codecs</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-backward-codecs</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-facet -->
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-facet</artifactId>
-			<version>${lucene.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-hdfs</artifactId>
-			<version>${hadoop.version}</version>
-			<!--<exclusions> -->
-			<!--<exclusion> -->
-			<!--<groupId>log4j</groupId> -->
-			<!--<artifactId>log4j</artifactId> -->
-			<!--</exclusion> -->
-			<!--</exclusions> -->
-		</dependency>
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-client</artifactId>
-			<version>${hadoop.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-log4j12</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-		<!--============================================ Hadoop Yarn Jar ========================================= -->
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-yarn-common</artifactId>
-			<version>${hadoop.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-api</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-yarn-api</artifactId>
-			<version>${hadoop.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-yarn-client</artifactId>
-			<version>${hadoop.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-yarn-server-web-proxy</artifactId>
-			<version>${hadoop.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.solr</groupId>
-			<artifactId>solr-core</artifactId>
-			<version>${solr.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.hadoop</groupId>
-					<artifactId>hadoop-annotations</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.hadoop</groupId>
-					<artifactId>hadoop-auth</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.hadoop</groupId>
-					<artifactId>hadoop-common</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.hadoop</groupId>
-					<artifactId>hadoop-hdfs</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-continuation</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-deploy</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-http</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-io</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-jmx</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-rewrite</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-security</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-server</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-servlet</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-servlets</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-util</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-webapp</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-xml</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.htrace</groupId>
-					<artifactId>htrace-core</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
 	</dependencies>
 
 	<build>
