@@ -16,6 +16,7 @@
 		<module>whale-server</module>
 		<module>whale-test</module>
     <module>whale-store</module>
+    <module>whale-bulkload</module>
   </modules>
 
 	<properties>
