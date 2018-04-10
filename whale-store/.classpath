@@ -23,5 +23,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/IKAnalyzer2012_FF.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/whale-core"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -15,7 +15,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<lucene.version>5.5.5</lucene.version>
 		<junit.version>4.12</junit.version>
 		<hadoop.version>2.7.3</hadoop.version>
 		<lucene.version>6.3.0</lucene.version>
@@ -87,12 +86,6 @@
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-hdfs</artifactId>
 			<version>${hadoop.version}</version>
-			<!--<exclusions> -->
-			<!--<exclusion> -->
-			<!--<groupId>log4j</groupId> -->
-			<!--<artifactId>log4j</artifactId> -->
-			<!--</exclusion> -->
-			<!--</exclusions> -->
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
@@ -109,7 +102,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 
 		<!--============================================ Hadoop Yarn Jar ========================================= -->
 		<dependency>
@@ -133,8 +125,6 @@
 			<artifactId>hadoop-yarn-client</artifactId>
 			<version>${hadoop.version}</version>
 		</dependency>
-
-
 
 		<!--============================================ Hadoop Yarn Server Web 
 			Jar ========================================= -->

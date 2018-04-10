@@ -1,10 +1,5 @@
 package org.whale.index;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,11 +9,7 @@ import org.apache.hadoop.fs.Path;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.search.BooleanClause;
 import org.apache.lucene.search.IndexSearcher;
@@ -31,16 +22,10 @@ import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
 import org.apache.lucene.search.highlight.SimpleSpanFragmenter;
 import org.apache.solr.store.hdfs.HdfsDirectory;
 
-public class HdfsSearch {
+public class WhaleIndexReader {
 
 	static Map<String, String> info = new HashMap<String, String>();
 
-	public static void main(String[] args) throws Exception {
-		
-		//搜索
-		searchIndex();
-	}
-	
 	public static void searchIndex() throws Exception {
 		
 		Configuration conf = new Configuration();
@@ -101,8 +86,11 @@ public class HdfsSearch {
 			System.out.println(highlighter.getBestFragment(analyzer, "content", document.get("content")));
 			System.out.println("");
 		}
-
 		directoryReader.close();
-		
+	}
+	
+	public static void main(String[] args) throws Exception {
+		//搜索
+		searchIndex();
 	}
 }
