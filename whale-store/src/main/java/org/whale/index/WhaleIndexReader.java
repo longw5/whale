@@ -1,96 +1,49 @@
 package org.whale.index;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
-import org.apache.lucene.search.BooleanClause;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
-import org.apache.lucene.search.highlight.Highlighter;
-import org.apache.lucene.search.highlight.QueryScorer;
-import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
-import org.apache.lucene.search.highlight.SimpleSpanFragmenter;
 import org.apache.solr.store.hdfs.HdfsDirectory;
+import org.whale.conf.WhaleConfiguration;
 
 public class WhaleIndexReader {
 
-	static Map<String, String> info = new HashMap<String, String>();
+	// 索引writer
+	private IndexSearcher initIndexSearcher;
 
-	public static void searchIndex() throws Exception {
-		
-		Configuration conf = new Configuration();
-
-		conf.set("fs.defaultFS", "hdfs://hadoop:8020");
-		
-        FileSystem fs = FileSystem.get(conf);
-        
-        Path indexPath = new Path("/lucene/nginx");
-        if (!fs.exists(indexPath)) {
-            fs.mkdirs(indexPath);
-        }
-        
-		HdfsDirectory hdfsDirectory = new HdfsDirectory(indexPath, conf);
-		
-		Analyzer analyzer = new StandardAnalyzer();
-		
-		String keyWord = "1E7016840F83DBC09679F5AE43D962ECAD03719B";
-
-		DirectoryReader directoryReader = DirectoryReader.open(hdfsDirectory);
-
-		IndexSearcher indexSearcher = new IndexSearcher(directoryReader);
-
-		String[] fields = { "content" };
-
-		BooleanClause.Occur[] clauses = {BooleanClause.Occur.SHOULD};
-
-		Query multiFieldQuery = MultiFieldQueryParser.parse(keyWord, fields, clauses, analyzer);
-
-		TopDocs topDocs = indexSearcher.search(multiFieldQuery, 100);
-
-		System.out.println("共找到匹配处：" + topDocs.totalHits); // totalHits和scoreDocs.length的区别还没搞明白
-		// 6、根据TopDocs获取ScoreDoc对象
-		ScoreDoc[] scoreDocs = topDocs.scoreDocs;
-		System.out.println("共找到匹配文档数：" + scoreDocs.length);
-
-		QueryScorer scorer = new QueryScorer(multiFieldQuery, "content");
-
-		// 自定义高亮代码
-		SimpleHTMLFormatter htmlFormatter = new SimpleHTMLFormatter("<span style=\"backgroud:red\">", "</span>");
-		Highlighter highlighter = new Highlighter(htmlFormatter, scorer);
-		highlighter.setTextFragmenter(new SimpleSpanFragmenter(scorer));
-		for (ScoreDoc scoreDoc : scoreDocs) {
-			// 7、根据searcher和ScoreDoc对象获取具体的Document对象
-			Document document = indexSearcher.doc(scoreDoc.doc);
-			// TokenStream tokenStream = new
-			// SimpleAnalyzer().tokenStream("content", new
-			// StringReader(content));
-			// TokenSources.getTokenStream("content", tvFields, content,
-			// analyzer, 100);
-			// TokenStream tokenStream =
-			// TokenSources.getAnyTokenStream(indexSearcher.getIndexReader(),
-			// scoreDoc.doc, "content", document, analyzer);
-			// System.out.println(highlighter.getBestFragment(tokenStream,
-			// content));
-			System.out.println("-----------------------------------------");
-			System.out.println(document.get("fileName") + ":" + document.get("filePath"));
-			System.out.println(highlighter.getBestFragment(analyzer, "content", document.get("content")));
-			System.out.println("");
-		}
-		directoryReader.close();
+	// 初始化
+	public WhaleIndexReader(String indexPath) throws Exception {
+		this.initIndexSearcher = initIndexReader(indexPath);
 	}
-	
-	public static void main(String[] args) throws Exception {
-		//搜索
-		searchIndex();
+
+	// 初始化indexWriter
+	private static IndexSearcher initIndexReader(String indexPath) throws Exception {
+		FileSystem fs = FileSystem.get(WhaleConfiguration.getConf());
+		Path indexPt = new Path(indexPath);
+		if (!fs.exists(indexPt)) {
+			return null;
+		}
+		HdfsDirectory hdfsDirectory = new HdfsDirectory(indexPt, WhaleConfiguration.getConf());
+		DirectoryReader directoryReader = DirectoryReader.open(hdfsDirectory);
+		return new IndexSearcher(directoryReader);
+	}
+
+	public TopDocs searchIndex(Query multiFieldQuery, int num) throws Exception {
+		int count = initIndexSearcher.count(multiFieldQuery);
+		if(num > count) 
+			return initIndexSearcher.search(multiFieldQuery, count);
+		return initIndexSearcher.search(multiFieldQuery, num);
+	}
+
+	public Document doc(int doc) throws Exception {
+		return initIndexSearcher.doc(doc);
+	}
+
+	public void close() {
+		
 	}
 }

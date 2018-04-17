@@ -3,7 +3,6 @@ package org.whale.index;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -20,24 +19,21 @@ import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.solr.store.hdfs.HdfsDirectory;
 import org.whale.conf.WhaleConfiguration;
 import org.whale.record.Record;
-import org.whale.util.Constant;
-
-import com.sun.tools.classfile.Annotation.element_value;
 
 public class WhaleIndexWriter {
 
-	private static IndexWriter initIndexWriter;
-	private static final Analyzer analyzer = new StandardAnalyzer();
-	private static final String tableName = "TABLE1";
+	//索引writer
+	private IndexWriter initIndexWriter;
+	//解析器
+	private Analyzer analyzer;
 	
-	static {
-		try {
-			initIndexWriter = initIndexWriter(Constant.FILE_MAP.get(tableName), analyzer);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	//初始化
+	public WhaleIndexWriter(String tableName) throws Exception {
+		this.analyzer = new StandardAnalyzer();
+		this.initIndexWriter = initIndexWriter(tableName, analyzer);
 	}
-	
+
+	//初始化indexWriter
 	private static IndexWriter initIndexWriter(String iNDEX_PATH, Analyzer analyzer) throws Exception {
 		FileSystem fs = FileSystem.get(WhaleConfiguration.getConf());
 		Path indexPath = new Path(iNDEX_PATH);
@@ -50,20 +46,39 @@ public class WhaleIndexWriter {
 	}
 	
 	//将数据插入到whale中
-	private static void insert(Object o) {
+	public void insert(Object o) {
 		
 		//如果是File类型
 		if(o instanceof File) {
 			FileToWhale(o);
+		//String类型
 		}else if(o instanceof String){
 			
+		//Whale record类型
 		}else if(o instanceof Record) {
 			
+		}
+	}
+	
+	public void update(Object o) {
+		
+		if(o instanceof String){
+			updateToWhale(o);
+		//Whale record类型
+		}else if(o instanceof Record) {
 			
 		}
 	}
 
-	private static void FileToWhale(Object o) {
+	private void updateToWhale(Object o) {
+		
+		String line = (String)o;
+		if(line == null)
+			return;
+	}
+
+	//将文件类型写入whale中
+	private void FileToWhale(Object o) {
 		File file = (File)o;
 		
 		if(file == null)
@@ -92,22 +107,18 @@ public class WhaleIndexWriter {
 		}
 	}
 
-	public static void write(IndexWriter indexWriter, InputStream is) throws IOException, Exception {
-		Document doc = new Document();
+	//将数据流构建索引
+	private static void write(IndexWriter indexWriter, InputStream is) throws IOException, Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(is, "utf-8"));
-		String s = "";
-		StringBuffer sb = new StringBuffer();
-		while ((s = br.readLine()) != null) {
-			sb.append(s + "\n");
+		String line;
+		while ((line = br.readLine()) != null) {
+			Document doc = new Document();
+			doc.add(new Field("content", line, TextField.TYPE_STORED));
+			
+			System.out.println(doc);
+			System.out.println();
+			
+			indexWriter.addDocument(doc);
 		}
-		br.close();
-		String content = sb.toString();
-		doc.add(new Field("content", content, TextField.TYPE_STORED));
-		indexWriter.addDocument(doc);
-	}
-	
-	public static void main(String[] args) throws Exception {
-		insert(new File("E://lucene/nginx"));
-		System.out.println("ok.............");
 	}
 }

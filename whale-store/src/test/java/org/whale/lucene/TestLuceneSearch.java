@@ -12,19 +12,15 @@ import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.queryparser.xml.QueryBuilder;
-import org.apache.lucene.queryparser.xml.QueryBuilderFactory;
-import org.apache.lucene.queryparser.xml.builders.BooleanQueryBuilder;
 import org.apache.lucene.search.BooleanClause;
+import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.BooleanQuery;
-import org.apache.lucene.search.BooleanQuery.Builder;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TermRangeQuery;
 import org.apache.lucene.search.TopDocs;
-import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.store.FSDirectory;
 import org.junit.Test;
 import org.whale.collector.TestCollector;
@@ -50,7 +46,7 @@ public class TestLuceneSearch {
 	@Test
 	public void booleanSearch2() throws IOException {
 		
-		//where date > "1330130185000" and id < "1340536034000 and id = "40000"
+		//where date > "1330130185000" and id < "1340536034000 and/or id = "40000"
 		FSDirectory directory = FSDirectory.open(FileSystems.getDefault().getPath("E://lucene/weibo/index"));
 		DirectoryReader directoryReader = DirectoryReader.open(directory);
 		IndexSearcher indexSearcher = new IndexSearcher(directoryReader);

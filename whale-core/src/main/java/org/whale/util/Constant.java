@@ -3,6 +3,9 @@ package org.whale.util;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+
 public class Constant {
 
 	//默认字符集
@@ -23,13 +26,6 @@ public class Constant {
 	//索引路径
 	public static String INDEX_PATH = "/lucene/nginx";
 	
-	public static final Map<String, String> FILE_MAP = new HashMap<>();
-	
-	static {
-		//初始化路径
-		FILE_MAP.put("TABLE1", "/whale/table1");
-		FILE_MAP.put("TABLE2", "/whale/table2");
-		FILE_MAP.put("TABLE3", "/whale/table3");
-		FILE_MAP.put("TABLE4", "/whale/table4");
-	}
+	//解析器
+	public static Analyzer DEFAULT_ANALYZER = new StandardAnalyzer();
 }
