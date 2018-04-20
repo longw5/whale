@@ -30,6 +30,7 @@ public class StatisticBytes {
 	 *            所统计的文件路径
 	 * @return 字节个数数组
 	 */
+	//统计单个字符出现的频率：
 	private int[] statistic(String path) {
 		/******储存字节数据的数组--索引值代表字节类型-存储值代表权值******/
 		int[] array_Bytes = new int[256];
@@ -41,6 +42,7 @@ public class StatisticBytes {
 			System.out.println("字节个数》》》"+number);
 			for (int i = 0; i < number; i++) {
 				int b = data.read();
+				System.out.println((char)b);
 				array_Bytes[b] ++;
 			}
 			
@@ -73,6 +75,7 @@ public class StatisticBytes {
 				queue.add(node);
 			}
 		}
+		System.out.println(queue);
 		return queue;
 	}
 	/**
@@ -157,7 +160,7 @@ public class StatisticBytes {
 	 * @return	码表
 	 */
 	public Map<Integer,String> createMap(){
-		int[] hfm_Codes = this.statistic("E:\\\\huffman\\\\index.log");//获得文件字节信息
+		int[] hfm_Codes = this.statistic("D://abc.txt");//获得文件字节信息
 		PriorityQueue<NodeData> queue = this.createQueue(hfm_Codes);//获得优先队列
 		/*
 		 * 获得哈夫曼树的根节点，

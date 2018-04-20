@@ -1,8 +1,11 @@
+org\whale\conf\WhaleConfiguration.class
 org\whale\schame\WhaleSchame.class
 org\whale\data\WhaleData.class
 org\whale\data\MemoryData.class
 org\whale\table\MemoryTable$1.class
+org\whale\table\TableName.class
 org\whale\data\MemoryEnumerator.class
+org\whale\table\TableManager.class
 org\whale\Test.class
 org\whale\data\MemoryData$Column.class
 org\whale\data\MemoryEnumerator$RowConverter.class
@@ -12,3 +15,4 @@ org\whale\data\MemoryData$Table.class
 org\whale\schame\WhaleSchameFactory.class
 org\whale\data\MemoryEnumerator$ArrayRowConverter.class
 org\whale\table\MemoryTable.class
+org\whale\util\Constant.class

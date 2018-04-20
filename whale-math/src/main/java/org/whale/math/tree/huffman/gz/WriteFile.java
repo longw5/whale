@@ -31,7 +31,7 @@ public class WriteFile {
 
 	private void init() {
 
-		String filePath = "E:\\\\huffman\\\\huffman.log";
+		String filePath = "E:\\\\huffman\\\\huffman2.log";
 		this.writeFile(filePath);
 	}
 
@@ -73,7 +73,8 @@ public class WriteFile {
 
 		try {
 			// 输入流
-			FileInputStream in = new FileInputStream("E:\\huffman\\index.log");
+			FileInputStream in = new FileInputStream("D://abc.txt");
+//			FileInputStream in = new FileInputStream("E:\\huffman\\relsemple.json");
 			BufferedInputStream bIn = new BufferedInputStream(in);
 			// 输出流
 			FileOutputStream out = new FileOutputStream(path);

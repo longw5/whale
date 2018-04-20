@@ -18,6 +18,7 @@
 		<module>whale-store</module>
 		<module>whale-bulkload</module>
     <module>whale-parser</module>
+    <module>whale-math</module>
   </modules>
 
 	<properties>

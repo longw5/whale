@@ -37,4 +37,9 @@ public class NodeData {
 	public void setRight(NodeData right) {
 		this.right = right;
 	}
+	@Override
+	public String toString() {
+		return "NodeData [data=" + data + ":" +((char)data) + ", weight=" + weight + ", point=" + point + ", parent=" + parent + ", left="
+				+ left + ", right=" + right + "]";
+	}
 }

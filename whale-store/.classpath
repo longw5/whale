@@ -23,7 +23,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/IKAnalyzer2012_FF.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/whale-core"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/whale-core"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
