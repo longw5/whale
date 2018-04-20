@@ -4,8 +4,8 @@ import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.search.BooleanClause;
 import org.apache.lucene.search.Query;
-import org.apache.lucene.search.BooleanClause.Occur;
 import org.whale.util.Constant;
+import org.apache.lucene.search.BooleanClause.Occur;
 
 public class WhaleQuery{
 
