@@ -1,0 +1,62 @@
+尝试自己写个TestHello.java
+
+1.由于没有用eclipse，所以直接用的是ultraedi+javac搞定的。
+
+	--在/home/dwdev/cajeep目录下，新建com\alibaba\hive\udf,
+	--命令mkdir -p com\alibaba\hive\udf
+	--新建java文件 vi com\alibaba\hive\udf\TestHello.java
+	
+	java内容如下：
+	package com.alibaba.hive.udf;   
+	  
+	import org.apache.hadoop.hive.ql.exec.UDF  ; 
+	  
+	public class TestHello extends UDF{   
+	     public String evaluate(){   
+	          return "hello world!";   
+	    }   
+	 
+	     public String evaluate(String str){   
+	          return "hello world: " + str;   
+	     }   
+	};
+	
+--仍旧在当前目录下，执行javac的编译命令。
+	javac -classpath /dhwdata/hadoop/hadoop-0.19.2-core.jar:/dhwdata/hive/lib/hive-exec-1.1.2.jar /home/dwdev/cajeep/com/alibaba/hive/udf/TestHello.java
+
+--将对应的class文件进行打包，
+	jar -cvf TestHello.jar  com/alibaba/hive/udf/TestHello.class
+
+--进入hive，
+
+--添加对应jar包。然后创建临时的函数
+	hive> add jar /home/dwdev/cajeep/TestHello.jar;
+	Added /home/dwdev/cajeep/TestHello.jar to class path
+	hive> CREATE TEMPORARY FUNCTION add_example AS 'com.alibaba.hive.udf.TestHello';
+	OK
+	Time taken: 0.0050 seconds
+	hive> select add_example('1') from dual;
+	Automatically selecting local only mode for query
+	Total MapReduce jobs = 1
+	Launching Job 1 out of 1
+	Number of reduce tasks is set to 0 since there's no reduce operator
+	plan = file:/tmp/dwdev/hive_2012-08-02_21-39-41_394_8972928103188650077/-local-10002/plan.xml
+	Job running in-process (local Hadoop)
+	Hadoop job information for null: number of mappers: 0; number of reducers: 0
+	2012-08-02 21:39:46,406 null map = 0%,  reduce = 0%
+	2012-08-02 21:39:47,409 null map = 100%,  reduce = 0%
+	Ended Job = job_local_0001
+	OK
+	hello world: 1
+	--显示hello world表示成功了。
+	
+中间可能会遇到类似的问题：
+hive>    CREATE TEMPORARY FUNCTION add_example AS 'com.alibaba.hive.udf.TesdtHello';
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.FunctionTask
+表示引用的类没有找到，这时候需要去check下jar文件中的class文件是不是这个对应的路径
+
+--2，创建function也成功了，但是显示：
+stderr logs
+java.lang.ClassNotFoundException: TestHello
+Continuing ...
+说明这个类没有放置在对应的包里面的，比如你在java文件里面写了package com.ali.udf,那么这个class必须包含在com\ali\udf的文件里面，否则就会报错。java文件中的pachage结构必须要和目录结构一致，这保证了你的文件放置在正确的位置，防止和其他人的同名文件冲突。
