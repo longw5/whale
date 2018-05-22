@@ -1,10 +1,11 @@
-package org.whale.math.hash.c;
+package org.whale.math.hash.consist;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import org.apache.hadoop.io.MD5Hash;
 
@@ -41,15 +42,15 @@ public class TestConsistantHash {
 		//hash奇数位     权重2
 		list.add(hashCodeUnEven(server1));
 		list.add(hashCodeUnEven(server2));
-//		list.add(hashCodeUnEven(server3));
-//		list.add(hashCodeUnEven(server4));
+		list.add(hashCodeUnEven(server3));
+		list.add(hashCodeUnEven(server4));
 		list.add(hashCodeUnEven(server5));
 		
 		//hash偶数位 权重3
-//		list.add(hashCodeEven(server1));
-//		list.add(hashCodeEven(server2));
-//		list.add(hashCodeEven(server3));
-//		list.add(hashCodeEven(server4));
+		list.add(hashCodeEven(server1));
+		list.add(hashCodeEven(server2));
+		list.add(hashCodeEven(server3));
+		list.add(hashCodeEven(server4));
 		list.add(hashCodeEven(server5));
 		
 		//初始化hash映射表
@@ -63,15 +64,15 @@ public class TestConsistantHash {
 		//权重为2
 		map.put(hashCodeUnEven(server1), server1);
 		map.put(hashCodeUnEven(server2), server2);
-//		map.put(hashCodeUnEven(server3), server3);
-//		map.put(hashCodeUnEven(server4), server4);
+		map.put(hashCodeUnEven(server3), server3);
+		map.put(hashCodeUnEven(server4), server4);
 		map.put(hashCodeUnEven(server5), server5);
 		
 		//权重为3
-//		map.put(hashCodeEven(server1), server1);
-//		map.put(hashCodeEven(server2), server2);
-//		map.put(hashCodeEven(server3), server3);
-//		map.put(hashCodeEven(server4), server4);
+		map.put(hashCodeEven(server1), server1);
+		map.put(hashCodeEven(server2), server2);
+		map.put(hashCodeEven(server3), server3);
+		map.put(hashCodeEven(server4), server4);
 		map.put(hashCodeEven(server5), server5);
 		
 	}
@@ -79,7 +80,7 @@ public class TestConsistantHash {
 	public static void main(String[] args) {
 		
 		//计算hash值
-		long hashCode = hashCode("192.168.186.144");
+		long hashCode = hashCode(UUID.randomUUID().toString());
 		System.out.println("hashCode:"+hashCode);
 		list.add(hashCode);
 		Collections.sort(list);
@@ -97,7 +98,6 @@ public class TestConsistantHash {
 		try {
 			long1 = list.get(indexOf-1);
 		} catch (Exception e) {
-			e.printStackTrace();
 			System.out.println(map.get(list.get(indexOf+1)));
 			System.exit(0);
 		}
@@ -105,7 +105,6 @@ public class TestConsistantHash {
 		try {
 			long2 = list.get(indexOf+1);
 		} catch (Exception e) {
-			e.printStackTrace();
 			System.out.println(map.get(list.get(indexOf-1)));
 			System.exit(0);
 		}
