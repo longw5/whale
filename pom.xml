@@ -22,8 +22,6 @@
 		<module>whale-udf</module>
     <module>whale-hadoop-mr</module>
     <module>whale-echarts</module>
-    <module>whale-spark-scala</module>
-    <module>whale-kafka</module>
   </modules>
 
 	<properties>

@@ -41,10 +41,10 @@ From: 'an unknown organization'
     License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - pentaho-aggdesigner-algorithm  org.pentaho:pentaho-aggdesigner-algorithm:jar:5.1.5-jhyde
 
-  - Restlet Core - API and Engine (http://restlet.org/org.restlet) org.restlet.jee:org.restlet:jar:2.3.0
-    License: Apache 2.0 license  (http://www.opensource.org/licenses/apache-2.0)    License: LGPL 3.0 license  (http://www.opensource.org/licenses/lgpl-3.0)    License: LGPL 2.1 license  (http://www.opensource.org/licenses/lgpl-2.1)    License: CDDL 1.0 license  (http://www.opensource.org/licenses/cddl1)    License: EPL 1.0 license  (http://www.opensource.org/licenses/eclipse-1.0)
-  - Restlet Extension - Servlet (http://restlet.org/org.restlet.ext.servlet) org.restlet.jee:org.restlet.ext.servlet:jar:2.3.0
-    License: Apache 2.0 license  (http://www.opensource.org/licenses/apache-2.0)    License: LGPL 3.0 license  (http://www.opensource.org/licenses/lgpl-3.0)    License: LGPL 2.1 license  (http://www.opensource.org/licenses/lgpl-2.1)    License: CDDL 1.0 license  (http://www.opensource.org/licenses/cddl1)    License: EPL 1.0 license  (http://www.opensource.org/licenses/eclipse-1.0)
+  - org.restlet  org.restlet.jee:org.restlet:jar:2.3.0
+
+  - org.restlet.ext.servlet  org.restlet.jee:org.restlet.ext.servlet:jar:2.3.0
+
   - XZ for Java (http://tukaani.org/xz/java.html) org.tukaani:xz:jar:1.0
     License: Public Domain 
   - xmlenc Library (http://xmlenc.sourceforge.net) xmlenc:xmlenc:jar:0.52
