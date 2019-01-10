@@ -22,6 +22,9 @@
 		<module>whale-udf</module>
     <module>whale-hadoop-mr</module>
     <module>whale-echarts</module>
+    <module>whale-mysql-binlog</module>
+    <module>whale-orc</module>
+    <module>whale-jni</module>
   </modules>
 
 	<properties>
