@@ -28,6 +28,7 @@ public class TestOrc {
 			y.vector[row] = r * 3;
 			// If the batch is full, write it out and start over.
 			if (batch.size == batch.getMaxSize()) {
+				System.out.println(batch.getMaxSize());
 				writer.addRowBatch(batch);
 				batch.reset();
 			}

@@ -1,8 +1,5 @@
 package org.whale.util;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 
@@ -12,13 +9,13 @@ public class Constant {
 	public static String DEFAULT_CHARSET = "utf-8";
 	
 	//绑定主机ip
-	public static String DEFAULT_HOST = "192.168.1.60";
+	public static String DEFAULT_HOST = "192.168.145.101";
 	
 	//绑定主机端口
 	public static int DEFAULT_PORT = 9999;
 
 	//hdfs url
-	public static String DEFAULT_HDFS_URL = "hdfs://hadoop:8020";
+	public static String DEFAULT_HDFS_URL = "hdfs://node1:9000";
 
 	//fs
 	public static String DEFAULT_FS = "org.apache.hadoop.hdfs.DistributedFileSystem";

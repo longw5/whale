@@ -25,6 +25,8 @@
     <module>whale-mysql-binlog</module>
     <module>whale-orc</module>
     <module>whale-jni</module>
+    <module>hook</module>
+    <module>whale-hook</module>
   </modules>
 
 	<properties>
