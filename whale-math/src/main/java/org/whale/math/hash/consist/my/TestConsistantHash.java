@@ -1,4 +1,4 @@
-package org.whale.math.hash.consist;
+package org.whale.math.hash.consist.my;
 
 import java.util.ArrayList;
 import java.util.Collections;

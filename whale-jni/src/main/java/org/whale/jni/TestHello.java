@@ -1,3 +1,5 @@
+package org.whale.jni;
+
 public class TestHello {
 
 	static {
