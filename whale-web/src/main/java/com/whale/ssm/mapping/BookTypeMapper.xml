@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+类名 -->
+<mapper namespace="com.whale.ssm.mapping.BookTypeDAO">
+    <!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
+	<select id="getAllBookTypes" resultType="BookType">
+	    select id, typeName from hubble.test.booktypes
+	</select>
+	<select id="queryBookTypesBySql" parameterType="int" resultType="BookType">
+        select id,typeName from (select id,typeName from hubble.test.booktypes where id between #{currIndex} and #{pageSize}) tt order by id
+	</select>
+	<insert id="add" parameterType="BookType">
+	    insert into hubble.test.booktypes(typeName) values(#{typeName})
+	</insert>
+	
+	<insert id="add100" statementType="STATEMENT" parameterType="java.lang.String">
+	     ${_parameter}
+	</insert>
+	
+	<insert id="insertList" statementType="STATEMENT" useGeneratedKeys="false">
+        INSERT INTO hubble.test.booktypes (
+        id,
+        typeName
+        ) VALUES
+        <foreach collection="bookTypeList" index="i" item="booktype">
+            (
+            #{booktype.id},
+            #{booktype.typeName}
+            )
+            <if test="i+1 &lt; bookTypeList.size">
+                ,
+            </if>
+        </foreach>
+	</insert>
+	
+	<insert id="insertBsList" statementType="STATEMENT" useGeneratedKeys="false">
+        INSERT INTO hubble.hubbletest.bs_sno_boc_20190618 (
+        busi_guid,
+		create_date,
+		seri_no,
+		reve_seri_no,
+		dt_busi,
+		tf_flag,
+		error_code,
+		note_vers,
+		face_value,
+		posi_offs,
+		sequ_no,
+		fsn_path,
+		fsn_no,
+		file_type,
+		note_curr,
+		busi_type,
+		finan_ins,
+		mach_no,
+		manu_code,
+		mach_type,
+		machine_model,
+		hard_verno,
+		authsoft_verno,
+		commercial_code,
+		bank_no,
+		mach_oper_no
+        ) VALUES
+        <foreach collection="bssList" index="i" item="bs">
+            (
+            #{bs.busi_guid},
+            #{bs.create_date},
+            #{bs.seri_no},
+            #{bs.reve_seri_no},
+            #{bs.dt_busi},
+            #{bs.tf_flag},
+            #{bs.error_code},
+            #{bs.note_vers},
+            #{bs.face_value},
+            #{bs.posi_offs},
+            #{bs.sequ_no},
+            #{bs.fsn_path},
+            #{bs.fsn_no},
+            #{bs.file_type},
+            #{bs.note_curr},
+            #{bs.busi_type},
+            #{bs.finan_ins},
+            #{bs.mach_no},
+            #{bs.manu_code},
+            #{bs.mach_type},
+            #{bs.machine_model},
+            #{bs.hard_verno},
+            #{bs.authsoft_verno},
+            #{bs.commercial_code},
+            #{bs.bank_no},
+            #{bs.mach_oper_no}
+            )
+            <if test="i+1 &lt; bssList.size">
+                ,
+            </if>
+        </foreach>
+	</insert>
+</mapper>

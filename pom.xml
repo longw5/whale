@@ -31,6 +31,8 @@
     <module>whale-hubble</module>
     <module>whale-rocksdb</module>
     <module>whale-antrl</module>
+    <module>whale-thread</module>
+    <module>whale-web</module>
   </modules>
 
 	<properties>
