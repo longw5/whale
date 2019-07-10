@@ -22,7 +22,6 @@ import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TermRangeQuery;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.FSDirectory;
-import org.junit.Test;
 import org.whale.collector.TestCollector;
 
 public class TestLuceneSearch {
@@ -43,7 +42,6 @@ public class TestLuceneSearch {
 	 * 范围boolean查询
 	 * @throws IOException
 	 */
-	@Test
 	public void booleanSearch2() throws IOException {
 		
 		//where date > "1330130185000" and id < "1340536034000 and/or id = "40000"
@@ -80,7 +78,6 @@ public class TestLuceneSearch {
 	 * 等值boolean查询
 	 * @throws IOException
 	 */
-	@Test
 	public void booleanSearch1() throws IOException {
 		
 		//where date = "1330130185000" and/or id = "152732"
@@ -116,7 +113,6 @@ public class TestLuceneSearch {
 	 * 范围检索
 	 * @throws IOException
 	 */
-	@Test
 	public void rangeSearch() throws IOException {
 
 		//where date < 1340536034000 and date > 1330130185000;
@@ -152,7 +148,6 @@ public class TestLuceneSearch {
 	 * @throws IOException 
 	 * @throws Exception
 	 */
-	@Test
 	public void collectorSearch() throws IOException {
 
 		FSDirectory directory = FSDirectory.open(FileSystems.getDefault().getPath("E://lucene/weibo/index"));
@@ -190,7 +185,6 @@ public class TestLuceneSearch {
 	 * @throws ParseException 
 	 * @throws Exception
 	 */
-	@Test
 	public void simpleSearch() throws IOException, ParseException {
 
 		//where date = "1330130185000";

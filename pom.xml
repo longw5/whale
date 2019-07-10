@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.apache</groupId>
@@ -20,20 +22,19 @@
 		<module>whale-parser</module>
 		<module>whale-math</module>
 		<module>whale-udf</module>
-    <module>whale-hadoop-mr</module>
-    <module>whale-echarts</module>
-    <module>whale-mysql-binlog</module>
-    <module>whale-orc</module>
-    <module>whale-jni</module>
-    <module>hook</module>
-    <module>whale-hook</module>
-    <module>whale-zk</module>
-    <module>whale-hubble</module>
-    <module>whale-rocksdb</module>
-    <module>whale-antrl</module>
-    <module>whale-thread</module>
-    <module>whale-web</module>
-  </modules>
+		<module>whale-hadoop-mr</module>
+		<module>whale-echarts</module>
+		<module>whale-mysql-binlog</module>
+		<module>whale-orc</module>
+		<module>whale-jni</module>
+		<module>whale-hook</module>
+		<module>whale-zk</module>
+		<module>whale-hubble</module>
+		<module>whale-rocksdb</module>
+		<module>whale-antrl</module>
+		<module>whale-thread</module>
+		<module>whale-web</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
