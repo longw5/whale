@@ -1,0 +1,175 @@
+2019/07/15-09:56:16.312095 f8c RocksDB version: 5.13.2
+2019/07/15-09:56:16.312150 f8c Git sha rocksdb_build_git_sha:@d25ca5fd49e7e523be91974ac951fb4265df57ec@
+2019/07/15-09:56:16.312166 f8c Compile date May 31 2018
+2019/07/15-09:56:16.312183 f8c DB SUMMARY
+2019/07/15-09:56:16.312297 f8c CURRENT file:  CURRENT
+2019/07/15-09:56:16.312312 f8c IDENTITY file:  IDENTITY
+2019/07/15-09:56:16.312334 f8c MANIFEST file:  MANIFEST-000008 size: 141 Bytes
+2019/07/15-09:56:16.312348 f8c SST files in ./rocksDbData dir, Total Num: 2, files: 000004.sst 000007.sst 
+2019/07/15-09:56:16.312360 f8c Write Ahead Log file in ./rocksDbData: 000009.log size: 45 ; 
+2019/07/15-09:56:16.312370 f8c                         Options.error_if_exists: 0
+2019/07/15-09:56:16.312390 f8c                       Options.create_if_missing: 1
+2019/07/15-09:56:16.312669 f8c                         Options.paranoid_checks: 1
+2019/07/15-09:56:16.312679 f8c                                     Options.env: 00000000007D57A0
+2019/07/15-09:56:16.312684 f8c                                Options.info_log: 0000000029A54430
+2019/07/15-09:56:16.312691 f8c                Options.max_file_opening_threads: 16
+2019/07/15-09:56:16.312695 f8c                              Options.statistics: 0000000000000000
+2019/07/15-09:56:16.312700 f8c                               Options.use_fsync: 0
+2019/07/15-09:56:16.312705 f8c                       Options.max_log_file_size: 0
+2019/07/15-09:56:16.312713 f8c                  Options.max_manifest_file_size: 18446744073709551615
+2019/07/15-09:56:16.312718 f8c                   Options.log_file_time_to_roll: 0
+2019/07/15-09:56:16.312723 f8c                       Options.keep_log_file_num: 1000
+2019/07/15-09:56:16.312727 f8c                    Options.recycle_log_file_num: 0
+2019/07/15-09:56:16.312732 f8c                         Options.allow_fallocate: 1
+2019/07/15-09:56:16.312736 f8c                        Options.allow_mmap_reads: 0
+2019/07/15-09:56:16.312741 f8c                       Options.allow_mmap_writes: 1
+2019/07/15-09:56:16.312745 f8c                        Options.use_direct_reads: 0
+2019/07/15-09:56:16.312750 f8c                        Options.use_direct_io_for_flush_and_compaction: 0
+2019/07/15-09:56:16.312754 f8c          Options.create_missing_column_families: 0
+2019/07/15-09:56:16.312759 f8c                              Options.db_log_dir: 
+2019/07/15-09:56:16.312764 f8c                                 Options.wal_dir: ./rocksDbData
+2019/07/15-09:56:16.312768 f8c                Options.table_cache_numshardbits: 6
+2019/07/15-09:56:16.312772 f8c                      Options.max_subcompactions: 1
+2019/07/15-09:56:16.312777 f8c                  Options.max_background_flushes: -1
+2019/07/15-09:56:16.312782 f8c                         Options.WAL_ttl_seconds: 0
+2019/07/15-09:56:16.312786 f8c                       Options.WAL_size_limit_MB: 0
+2019/07/15-09:56:16.312790 f8c             Options.manifest_preallocation_size: 4194304
+2019/07/15-09:56:16.312795 f8c                     Options.is_fd_close_on_exec: 1
+2019/07/15-09:56:16.312799 f8c                   Options.advise_random_on_open: 1
+2019/07/15-09:56:16.312804 f8c                    Options.db_write_buffer_size: 0
+2019/07/15-09:56:16.312809 f8c                    Options.write_buffer_manager: 0000000029A75070
+2019/07/15-09:56:16.312813 f8c         Options.access_hint_on_compaction_start: 1
+2019/07/15-09:56:16.312817 f8c  Options.new_table_reader_for_compaction_inputs: 0
+2019/07/15-09:56:16.312822 f8c           Options.random_access_max_buffer_size: 1048576
+2019/07/15-09:56:16.312827 f8c                      Options.use_adaptive_mutex: 0
+2019/07/15-09:56:16.312831 f8c                            Options.rate_limiter: 0000000000000000
+2019/07/15-09:56:16.312835 f8c     Options.sst_file_manager.rate_bytes_per_sec: 0
+2019/07/15-09:56:16.312840 f8c                       Options.wal_recovery_mode: 2
+2019/07/15-09:56:16.312844 f8c                  Options.enable_thread_tracking: 0
+2019/07/15-09:56:16.312849 f8c                  Options.enable_pipelined_write: 0
+2019/07/15-09:56:16.312854 f8c         Options.allow_concurrent_memtable_write: 1
+2019/07/15-09:56:16.312882 f8c      Options.enable_write_thread_adaptive_yield: 1
+2019/07/15-09:56:16.312889 f8c             Options.write_thread_max_yield_usec: 100
+2019/07/15-09:56:16.312894 f8c            Options.write_thread_slow_yield_usec: 3
+2019/07/15-09:56:16.312899 f8c                               Options.row_cache: None
+2019/07/15-09:56:16.312903 f8c                              Options.wal_filter: None
+2019/07/15-09:56:16.312907 f8c             Options.avoid_flush_during_recovery: 0
+2019/07/15-09:56:16.312912 f8c             Options.allow_ingest_behind: 0
+2019/07/15-09:56:16.312924 f8c             Options.preserve_deletes: 0
+2019/07/15-09:56:16.312929 f8c             Options.two_write_queues: 0
+2019/07/15-09:56:16.312934 f8c             Options.manual_wal_flush: 0
+2019/07/15-09:56:16.312938 f8c             Options.max_background_jobs: 2
+2019/07/15-09:56:16.312943 f8c             Options.max_background_compactions: -1
+2019/07/15-09:56:16.312947 f8c             Options.avoid_flush_during_shutdown: 0
+2019/07/15-09:56:16.312951 f8c           Options.writable_file_max_buffer_size: 1048576
+2019/07/15-09:56:16.312956 f8c             Options.delayed_write_rate : 16777216
+2019/07/15-09:56:16.312960 f8c             Options.max_total_wal_size: 0
+2019/07/15-09:56:16.312965 f8c             Options.delete_obsolete_files_period_micros: 21600000000
+2019/07/15-09:56:16.312969 f8c                   Options.stats_dump_period_sec: 600
+2019/07/15-09:56:16.312974 f8c                          Options.max_open_files: -1
+2019/07/15-09:56:16.312978 f8c                          Options.bytes_per_sync: 0
+2019/07/15-09:56:16.312983 f8c                      Options.wal_bytes_per_sync: 0
+2019/07/15-09:56:16.312988 f8c       Options.compaction_readahead_size: 0
+2019/07/15-09:56:16.312992 f8c Compression algorithms supported:
+2019/07/15-09:56:16.313002 f8c 	kZSTD supported: 0
+2019/07/15-09:56:16.313007 f8c 	kSnappyCompression supported: 0
+2019/07/15-09:56:16.313011 f8c 	kBZip2Compression supported: 0
+2019/07/15-09:56:16.313015 f8c 	kZlibCompression supported: 0
+2019/07/15-09:56:16.313020 f8c 	kLZ4Compression supported: 0
+2019/07/15-09:56:16.313024 f8c 	kXpressCompression supported: 0
+2019/07/15-09:56:16.313028 f8c 	kLZ4HCCompression supported: 0
+2019/07/15-09:56:16.313033 f8c 	kZSTDNotFinalCompression supported: 0
+2019/07/15-09:56:16.313043 f8c Fast CRC32 supported: Supported on x86
+2019/07/15-09:56:16.313501 f8c               Options.comparator: leveldb.BytewiseComparator
+2019/07/15-09:56:16.313510 f8c           Options.merge_operator: None
+2019/07/15-09:56:16.313515 f8c        Options.compaction_filter: None
+2019/07/15-09:56:16.313519 f8c        Options.compaction_filter_factory: None
+2019/07/15-09:56:16.313524 f8c         Options.memtable_factory: SkipListFactory
+2019/07/15-09:56:16.313528 f8c            Options.table_factory: BlockBasedTable
+2019/07/15-09:56:16.313573 f8c            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000000007DE8A0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000000082C9D0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+  enable_index_compression: 1
+2019/07/15-09:56:16.313580 f8c        Options.write_buffer_size: 67108864
+2019/07/15-09:56:16.313588 f8c  Options.max_write_buffer_number: 2
+2019/07/15-09:56:16.313592 f8c          Options.compression: NoCompression
+2019/07/15-09:56:16.313621 f8c                  Options.bottommost_compression: Disabled
+2019/07/15-09:56:16.313628 f8c       Options.prefix_extractor: nullptr
+2019/07/15-09:56:16.313632 f8c   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2019/07/15-09:56:16.313636 f8c             Options.num_levels: 7
+2019/07/15-09:56:16.313641 f8c        Options.min_write_buffer_number_to_merge: 1
+2019/07/15-09:56:16.313645 f8c     Options.max_write_buffer_number_to_maintain: 0
+2019/07/15-09:56:16.313650 f8c            Options.compression_opts.window_bits: -14
+2019/07/15-09:56:16.313654 f8c                  Options.compression_opts.level: 32767
+2019/07/15-09:56:16.313659 f8c               Options.compression_opts.strategy: 0
+2019/07/15-09:56:16.313663 f8c         Options.compression_opts.max_dict_bytes: 0
+2019/07/15-09:56:16.313668 f8c      Options.level0_file_num_compaction_trigger: 4
+2019/07/15-09:56:16.313673 f8c          Options.level0_slowdown_writes_trigger: 20
+2019/07/15-09:56:16.313677 f8c              Options.level0_stop_writes_trigger: 36
+2019/07/15-09:56:16.313681 f8c                   Options.target_file_size_base: 67108864
+2019/07/15-09:56:16.313686 f8c             Options.target_file_size_multiplier: 1
+2019/07/15-09:56:16.313690 f8c                Options.max_bytes_for_level_base: 268435456
+2019/07/15-09:56:16.313695 f8c Options.level_compaction_dynamic_level_bytes: 0
+2019/07/15-09:56:16.313699 f8c          Options.max_bytes_for_level_multiplier: 10.000000
+2019/07/15-09:56:16.313714 f8c Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2019/07/15-09:56:16.313719 f8c Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2019/07/15-09:56:16.313723 f8c Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2019/07/15-09:56:16.313728 f8c Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2019/07/15-09:56:16.313732 f8c Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2019/07/15-09:56:16.313737 f8c Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2019/07/15-09:56:16.313741 f8c Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2019/07/15-09:56:16.313746 f8c       Options.max_sequential_skip_in_iterations: 8
+2019/07/15-09:56:16.313750 f8c                    Options.max_compaction_bytes: 1677721600
+2019/07/15-09:56:16.313755 f8c                        Options.arena_block_size: 8388608
+2019/07/15-09:56:16.313759 f8c   Options.soft_pending_compaction_bytes_limit: 68719476736
+2019/07/15-09:56:16.313764 f8c   Options.hard_pending_compaction_bytes_limit: 274877906944
+2019/07/15-09:56:16.313769 f8c       Options.rate_limit_delay_max_milliseconds: 100
+2019/07/15-09:56:16.313773 f8c                Options.disable_auto_compactions: 0
+2019/07/15-09:56:16.313779 f8c                        Options.compaction_style: kCompactionStyleLevel
+2019/07/15-09:56:16.313784 f8c                          Options.compaction_pri: kByCompensatedSize
+2019/07/15-09:56:16.313788 f8c Options.compaction_options_universal.size_ratio: 1
+2019/07/15-09:56:16.313793 f8c Options.compaction_options_universal.min_merge_width: 2
+2019/07/15-09:56:16.313797 f8c Options.compaction_options_universal.max_merge_width: 4294967295
+2019/07/15-09:56:16.313802 f8c Options.compaction_options_universal.max_size_amplification_percent: 200
+2019/07/15-09:56:16.313807 f8c Options.compaction_options_universal.compression_size_percent: -1
+2019/07/15-09:56:16.313812 f8c Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2019/07/15-09:56:16.313817 f8c Options.compaction_options_fifo.max_table_files_size: 1073741824
+2019/07/15-09:56:16.313821 f8c Options.compaction_options_fifo.allow_compaction: 0
+2019/07/15-09:56:16.313826 f8c Options.compaction_options_fifo.ttl: 0
+2019/07/15-09:56:16.313830 f8c                   Options.table_properties_collectors: 
+2019/07/15-09:56:16.313835 f8c                   Options.inplace_update_support: 0
+2019/07/15-09:56:16.313839 f8c                 Options.inplace_update_num_locks: 10000
+2019/07/15-09:56:16.313844 f8c               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2019/07/15-09:56:16.313849 f8c   Options.memtable_huge_page_size: 0
+2019/07/15-09:56:16.313854 f8c                           Options.bloom_locality: 0
+2019/07/15-09:56:16.313859 f8c                    Options.max_successive_merges: 0
+2019/07/15-09:56:16.313864 f8c                Options.optimize_filters_for_hits: 0
+2019/07/15-09:56:16.313868 f8c                Options.paranoid_file_checks: 0
+2019/07/15-09:56:16.313872 f8c                Options.force_consistency_checks: 0
+2019/07/15-09:56:16.313877 f8c                Options.report_bg_io_stats: 0

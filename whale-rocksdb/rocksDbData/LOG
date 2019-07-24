@@ -1,89 +1,92 @@
-2019/05/10-14:52:33.415178 ef4 RocksDB version: 5.13.2
-2019/05/10-14:52:33.415375 ef4 Git sha rocksdb_build_git_sha:@d25ca5fd49e7e523be91974ac951fb4265df57ec@
-2019/05/10-14:52:33.415448 ef4 Compile date May 31 2018
-2019/05/10-14:52:33.415516 ef4 DB SUMMARY
-2019/05/10-14:52:33.415874 ef4 SST files in ./rocksDbData dir, Total Num: 0, files: 
-2019/05/10-14:52:33.415941 ef4 Write Ahead Log file in ./rocksDbData: 
-2019/05/10-14:52:33.415987 ef4                         Options.error_if_exists: 0
-2019/05/10-14:52:33.416059 ef4                       Options.create_if_missing: 1
-2019/05/10-14:52:33.416102 ef4                         Options.paranoid_checks: 1
-2019/05/10-14:52:33.416144 ef4                                     Options.env: 00000000010A15A0
-2019/05/10-14:52:33.416616 ef4                                Options.info_log: 000000002A1F73F0
-2019/05/10-14:52:33.416655 ef4                Options.max_file_opening_threads: 16
-2019/05/10-14:52:33.416677 ef4                              Options.statistics: 0000000000000000
-2019/05/10-14:52:33.416697 ef4                               Options.use_fsync: 0
-2019/05/10-14:52:33.416717 ef4                       Options.max_log_file_size: 0
-2019/05/10-14:52:33.416750 ef4                  Options.max_manifest_file_size: 18446744073709551615
-2019/05/10-14:52:33.416770 ef4                   Options.log_file_time_to_roll: 0
-2019/05/10-14:52:33.416789 ef4                       Options.keep_log_file_num: 1000
-2019/05/10-14:52:33.416808 ef4                    Options.recycle_log_file_num: 0
-2019/05/10-14:52:33.416827 ef4                         Options.allow_fallocate: 1
-2019/05/10-14:52:33.416845 ef4                        Options.allow_mmap_reads: 0
-2019/05/10-14:52:33.416864 ef4                       Options.allow_mmap_writes: 1
-2019/05/10-14:52:33.416882 ef4                        Options.use_direct_reads: 0
-2019/05/10-14:52:33.416901 ef4                        Options.use_direct_io_for_flush_and_compaction: 0
-2019/05/10-14:52:33.416920 ef4          Options.create_missing_column_families: 0
-2019/05/10-14:52:33.416939 ef4                              Options.db_log_dir: 
-2019/05/10-14:52:33.416958 ef4                                 Options.wal_dir: ./rocksDbData
-2019/05/10-14:52:33.416976 ef4                Options.table_cache_numshardbits: 6
-2019/05/10-14:52:33.416995 ef4                      Options.max_subcompactions: 1
-2019/05/10-14:52:33.417013 ef4                  Options.max_background_flushes: -1
-2019/05/10-14:52:33.417032 ef4                         Options.WAL_ttl_seconds: 0
-2019/05/10-14:52:33.417051 ef4                       Options.WAL_size_limit_MB: 0
-2019/05/10-14:52:33.417069 ef4             Options.manifest_preallocation_size: 4194304
-2019/05/10-14:52:33.417088 ef4                     Options.is_fd_close_on_exec: 1
-2019/05/10-14:52:33.417107 ef4                   Options.advise_random_on_open: 1
-2019/05/10-14:52:33.417126 ef4                    Options.db_write_buffer_size: 0
-2019/05/10-14:52:33.417144 ef4                    Options.write_buffer_manager: 000000002A386AF0
-2019/05/10-14:52:33.417163 ef4         Options.access_hint_on_compaction_start: 1
-2019/05/10-14:52:33.417182 ef4  Options.new_table_reader_for_compaction_inputs: 0
-2019/05/10-14:52:33.417200 ef4           Options.random_access_max_buffer_size: 1048576
-2019/05/10-14:52:33.417219 ef4                      Options.use_adaptive_mutex: 0
-2019/05/10-14:52:33.417252 ef4                            Options.rate_limiter: 0000000000000000
-2019/05/10-14:52:33.417266 ef4     Options.sst_file_manager.rate_bytes_per_sec: 0
-2019/05/10-14:52:33.417279 ef4                       Options.wal_recovery_mode: 2
-2019/05/10-14:52:33.417292 ef4                  Options.enable_thread_tracking: 0
-2019/05/10-14:52:33.417305 ef4                  Options.enable_pipelined_write: 0
-2019/05/10-14:52:33.417318 ef4         Options.allow_concurrent_memtable_write: 1
-2019/05/10-14:52:33.417330 ef4      Options.enable_write_thread_adaptive_yield: 1
-2019/05/10-14:52:33.417351 ef4             Options.write_thread_max_yield_usec: 100
-2019/05/10-14:52:33.417370 ef4            Options.write_thread_slow_yield_usec: 3
-2019/05/10-14:52:33.417446 ef4                               Options.row_cache: None
-2019/05/10-14:52:33.417468 ef4                              Options.wal_filter: None
-2019/05/10-14:52:33.417482 ef4             Options.avoid_flush_during_recovery: 0
-2019/05/10-14:52:33.417495 ef4             Options.allow_ingest_behind: 0
-2019/05/10-14:52:33.417534 ef4             Options.preserve_deletes: 0
-2019/05/10-14:52:33.417549 ef4             Options.two_write_queues: 0
-2019/05/10-14:52:33.417561 ef4             Options.manual_wal_flush: 0
-2019/05/10-14:52:33.417574 ef4             Options.max_background_jobs: 2
-2019/05/10-14:52:33.417586 ef4             Options.max_background_compactions: -1
-2019/05/10-14:52:33.417599 ef4             Options.avoid_flush_during_shutdown: 0
-2019/05/10-14:52:33.417612 ef4           Options.writable_file_max_buffer_size: 1048576
-2019/05/10-14:52:33.417625 ef4             Options.delayed_write_rate : 16777216
-2019/05/10-14:52:33.417638 ef4             Options.max_total_wal_size: 0
-2019/05/10-14:52:33.417650 ef4             Options.delete_obsolete_files_period_micros: 21600000000
-2019/05/10-14:52:33.417664 ef4                   Options.stats_dump_period_sec: 600
-2019/05/10-14:52:33.417677 ef4                          Options.max_open_files: -1
-2019/05/10-14:52:33.417690 ef4                          Options.bytes_per_sync: 0
-2019/05/10-14:52:33.417702 ef4                      Options.wal_bytes_per_sync: 0
-2019/05/10-14:52:33.417715 ef4       Options.compaction_readahead_size: 0
-2019/05/10-14:52:33.417728 ef4 Compression algorithms supported:
-2019/05/10-14:52:33.417760 ef4 	kZSTD supported: 0
-2019/05/10-14:52:33.417772 ef4 	kSnappyCompression supported: 0
-2019/05/10-14:52:33.417785 ef4 	kBZip2Compression supported: 0
-2019/05/10-14:52:33.417797 ef4 	kZlibCompression supported: 0
-2019/05/10-14:52:33.417809 ef4 	kLZ4Compression supported: 0
-2019/05/10-14:52:33.417821 ef4 	kXpressCompression supported: 0
-2019/05/10-14:52:33.417833 ef4 	kLZ4HCCompression supported: 0
-2019/05/10-14:52:33.417845 ef4 	kZSTDNotFinalCompression supported: 0
-2019/05/10-14:52:33.417875 ef4 Fast CRC32 supported: Supported on x86
-2019/05/10-14:52:33.526955 ef4               Options.comparator: leveldb.BytewiseComparator
-2019/05/10-14:52:33.526969 ef4           Options.merge_operator: None
-2019/05/10-14:52:33.526974 ef4        Options.compaction_filter: None
-2019/05/10-14:52:33.526978 ef4        Options.compaction_filter_factory: None
-2019/05/10-14:52:33.526982 ef4         Options.memtable_factory: SkipListFactory
-2019/05/10-14:52:33.526987 ef4            Options.table_factory: BlockBasedTable
-2019/05/10-14:52:33.527027 ef4            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000000010ADBF0)
+2019/07/15-09:56:24.127399 c30 RocksDB version: 5.13.2
+2019/07/15-09:56:24.127457 c30 Git sha rocksdb_build_git_sha:@d25ca5fd49e7e523be91974ac951fb4265df57ec@
+2019/07/15-09:56:24.127474 c30 Compile date May 31 2018
+2019/07/15-09:56:24.127491 c30 DB SUMMARY
+2019/07/15-09:56:24.127834 c30 CURRENT file:  CURRENT
+2019/07/15-09:56:24.127854 c30 IDENTITY file:  IDENTITY
+2019/07/15-09:56:24.127878 c30 MANIFEST file:  MANIFEST-000011 size: 182 Bytes
+2019/07/15-09:56:24.127892 c30 SST files in ./rocksDbData dir, Total Num: 3, files: 000004.sst 000007.sst 000010.sst 
+2019/07/15-09:56:24.127903 c30 Write Ahead Log file in ./rocksDbData: 000012.log size: 45 ; 
+2019/07/15-09:56:24.127915 c30                         Options.error_if_exists: 0
+2019/07/15-09:56:24.127933 c30                       Options.create_if_missing: 1
+2019/07/15-09:56:24.128215 c30                         Options.paranoid_checks: 1
+2019/07/15-09:56:24.128224 c30                                     Options.env: 00000000007E54E0
+2019/07/15-09:56:24.128229 c30                                Options.info_log: 00000000292856F0
+2019/07/15-09:56:24.128234 c30                Options.max_file_opening_threads: 16
+2019/07/15-09:56:24.128239 c30                              Options.statistics: 0000000000000000
+2019/07/15-09:56:24.128243 c30                               Options.use_fsync: 0
+2019/07/15-09:56:24.128248 c30                       Options.max_log_file_size: 0
+2019/07/15-09:56:24.128256 c30                  Options.max_manifest_file_size: 18446744073709551615
+2019/07/15-09:56:24.128262 c30                   Options.log_file_time_to_roll: 0
+2019/07/15-09:56:24.128266 c30                       Options.keep_log_file_num: 1000
+2019/07/15-09:56:24.128271 c30                    Options.recycle_log_file_num: 0
+2019/07/15-09:56:24.128275 c30                         Options.allow_fallocate: 1
+2019/07/15-09:56:24.128280 c30                        Options.allow_mmap_reads: 0
+2019/07/15-09:56:24.128284 c30                       Options.allow_mmap_writes: 1
+2019/07/15-09:56:24.128289 c30                        Options.use_direct_reads: 0
+2019/07/15-09:56:24.128293 c30                        Options.use_direct_io_for_flush_and_compaction: 0
+2019/07/15-09:56:24.128298 c30          Options.create_missing_column_families: 0
+2019/07/15-09:56:24.128302 c30                              Options.db_log_dir: 
+2019/07/15-09:56:24.128307 c30                                 Options.wal_dir: ./rocksDbData
+2019/07/15-09:56:24.128312 c30                Options.table_cache_numshardbits: 6
+2019/07/15-09:56:24.128316 c30                      Options.max_subcompactions: 1
+2019/07/15-09:56:24.128320 c30                  Options.max_background_flushes: -1
+2019/07/15-09:56:24.128325 c30                         Options.WAL_ttl_seconds: 0
+2019/07/15-09:56:24.128330 c30                       Options.WAL_size_limit_MB: 0
+2019/07/15-09:56:24.128334 c30             Options.manifest_preallocation_size: 4194304
+2019/07/15-09:56:24.128339 c30                     Options.is_fd_close_on_exec: 1
+2019/07/15-09:56:24.128343 c30                   Options.advise_random_on_open: 1
+2019/07/15-09:56:24.128348 c30                    Options.db_write_buffer_size: 0
+2019/07/15-09:56:24.128352 c30                    Options.write_buffer_manager: 00000000292A3E10
+2019/07/15-09:56:24.128357 c30         Options.access_hint_on_compaction_start: 1
+2019/07/15-09:56:24.128361 c30  Options.new_table_reader_for_compaction_inputs: 0
+2019/07/15-09:56:24.128366 c30           Options.random_access_max_buffer_size: 1048576
+2019/07/15-09:56:24.128370 c30                      Options.use_adaptive_mutex: 0
+2019/07/15-09:56:24.128375 c30                            Options.rate_limiter: 0000000000000000
+2019/07/15-09:56:24.128379 c30     Options.sst_file_manager.rate_bytes_per_sec: 0
+2019/07/15-09:56:24.128384 c30                       Options.wal_recovery_mode: 2
+2019/07/15-09:56:24.128388 c30                  Options.enable_thread_tracking: 0
+2019/07/15-09:56:24.128393 c30                  Options.enable_pipelined_write: 0
+2019/07/15-09:56:24.128397 c30         Options.allow_concurrent_memtable_write: 1
+2019/07/15-09:56:24.128426 c30      Options.enable_write_thread_adaptive_yield: 1
+2019/07/15-09:56:24.128433 c30             Options.write_thread_max_yield_usec: 100
+2019/07/15-09:56:24.128437 c30            Options.write_thread_slow_yield_usec: 3
+2019/07/15-09:56:24.128442 c30                               Options.row_cache: None
+2019/07/15-09:56:24.128446 c30                              Options.wal_filter: None
+2019/07/15-09:56:24.128451 c30             Options.avoid_flush_during_recovery: 0
+2019/07/15-09:56:24.128455 c30             Options.allow_ingest_behind: 0
+2019/07/15-09:56:24.128467 c30             Options.preserve_deletes: 0
+2019/07/15-09:56:24.128472 c30             Options.two_write_queues: 0
+2019/07/15-09:56:24.128477 c30             Options.manual_wal_flush: 0
+2019/07/15-09:56:24.128481 c30             Options.max_background_jobs: 2
+2019/07/15-09:56:24.128485 c30             Options.max_background_compactions: -1
+2019/07/15-09:56:24.128490 c30             Options.avoid_flush_during_shutdown: 0
+2019/07/15-09:56:24.128494 c30           Options.writable_file_max_buffer_size: 1048576
+2019/07/15-09:56:24.128499 c30             Options.delayed_write_rate : 16777216
+2019/07/15-09:56:24.128503 c30             Options.max_total_wal_size: 0
+2019/07/15-09:56:24.128508 c30             Options.delete_obsolete_files_period_micros: 21600000000
+2019/07/15-09:56:24.128512 c30                   Options.stats_dump_period_sec: 600
+2019/07/15-09:56:24.128517 c30                          Options.max_open_files: -1
+2019/07/15-09:56:24.128522 c30                          Options.bytes_per_sync: 0
+2019/07/15-09:56:24.128526 c30                      Options.wal_bytes_per_sync: 0
+2019/07/15-09:56:24.128531 c30       Options.compaction_readahead_size: 0
+2019/07/15-09:56:24.128535 c30 Compression algorithms supported:
+2019/07/15-09:56:24.128546 c30 	kZSTD supported: 0
+2019/07/15-09:56:24.128550 c30 	kSnappyCompression supported: 0
+2019/07/15-09:56:24.128556 c30 	kBZip2Compression supported: 0
+2019/07/15-09:56:24.128560 c30 	kZlibCompression supported: 0
+2019/07/15-09:56:24.128564 c30 	kLZ4Compression supported: 0
+2019/07/15-09:56:24.128568 c30 	kXpressCompression supported: 0
+2019/07/15-09:56:24.128573 c30 	kLZ4HCCompression supported: 0
+2019/07/15-09:56:24.128577 c30 	kZSTDNotFinalCompression supported: 0
+2019/07/15-09:56:24.128587 c30 Fast CRC32 supported: Supported on x86
+2019/07/15-09:56:24.129031 c30               Options.comparator: leveldb.BytewiseComparator
+2019/07/15-09:56:24.129039 c30           Options.merge_operator: None
+2019/07/15-09:56:24.129044 c30        Options.compaction_filter: None
+2019/07/15-09:56:24.129048 c30        Options.compaction_filter_factory: None
+2019/07/15-09:56:24.129053 c30         Options.memtable_factory: SkipListFactory
+2019/07/15-09:56:24.129057 c30            Options.table_factory: BlockBasedTable
+2019/07/15-09:56:24.129103 c30            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000000007B02B0)
   cache_index_and_filter_blocks: 0
   cache_index_and_filter_blocks_with_high_priority: 0
   pin_l0_filter_and_index_blocks_in_cache: 0
@@ -91,7 +94,7 @@
   hash_index_allow_collision: 1
   checksum: 1
   no_block_cache: 0
-  block_cache: 0000000001108A80
+  block_cache: 0000000000804FC0
   block_cache_name: LRUCache
   block_cache_options:
     capacity : 8388608
@@ -113,60 +116,60 @@
   read_amp_bytes_per_bit: 0
   format_version: 2
   enable_index_compression: 1
-2019/05/10-14:52:33.527033 ef4        Options.write_buffer_size: 67108864
-2019/05/10-14:52:33.527038 ef4  Options.max_write_buffer_number: 2
-2019/05/10-14:52:33.527042 ef4          Options.compression: NoCompression
-2019/05/10-14:52:33.527046 ef4                  Options.bottommost_compression: Disabled
-2019/05/10-14:52:33.527051 ef4       Options.prefix_extractor: nullptr
-2019/05/10-14:52:33.527054 ef4   Options.memtable_insert_with_hint_prefix_extractor: nullptr
-2019/05/10-14:52:33.527086 ef4             Options.num_levels: 7
-2019/05/10-14:52:33.527093 ef4        Options.min_write_buffer_number_to_merge: 1
-2019/05/10-14:52:33.527097 ef4     Options.max_write_buffer_number_to_maintain: 0
-2019/05/10-14:52:33.527102 ef4            Options.compression_opts.window_bits: -14
-2019/05/10-14:52:33.527106 ef4                  Options.compression_opts.level: 32767
-2019/05/10-14:52:33.527110 ef4               Options.compression_opts.strategy: 0
-2019/05/10-14:52:33.527115 ef4         Options.compression_opts.max_dict_bytes: 0
-2019/05/10-14:52:33.527119 ef4      Options.level0_file_num_compaction_trigger: 4
-2019/05/10-14:52:33.527123 ef4          Options.level0_slowdown_writes_trigger: 20
-2019/05/10-14:52:33.527128 ef4              Options.level0_stop_writes_trigger: 36
-2019/05/10-14:52:33.527132 ef4                   Options.target_file_size_base: 67108864
-2019/05/10-14:52:33.527136 ef4             Options.target_file_size_multiplier: 1
-2019/05/10-14:52:33.527140 ef4                Options.max_bytes_for_level_base: 268435456
-2019/05/10-14:52:33.527145 ef4 Options.level_compaction_dynamic_level_bytes: 0
-2019/05/10-14:52:33.527149 ef4          Options.max_bytes_for_level_multiplier: 10.000000
-2019/05/10-14:52:33.527163 ef4 Options.max_bytes_for_level_multiplier_addtl[0]: 1
-2019/05/10-14:52:33.527167 ef4 Options.max_bytes_for_level_multiplier_addtl[1]: 1
-2019/05/10-14:52:33.527172 ef4 Options.max_bytes_for_level_multiplier_addtl[2]: 1
-2019/05/10-14:52:33.527176 ef4 Options.max_bytes_for_level_multiplier_addtl[3]: 1
-2019/05/10-14:52:33.527180 ef4 Options.max_bytes_for_level_multiplier_addtl[4]: 1
-2019/05/10-14:52:33.527185 ef4 Options.max_bytes_for_level_multiplier_addtl[5]: 1
-2019/05/10-14:52:33.527189 ef4 Options.max_bytes_for_level_multiplier_addtl[6]: 1
-2019/05/10-14:52:33.527193 ef4       Options.max_sequential_skip_in_iterations: 8
-2019/05/10-14:52:33.527198 ef4                    Options.max_compaction_bytes: 1677721600
-2019/05/10-14:52:33.527202 ef4                        Options.arena_block_size: 8388608
-2019/05/10-14:52:33.527207 ef4   Options.soft_pending_compaction_bytes_limit: 68719476736
-2019/05/10-14:52:33.527211 ef4   Options.hard_pending_compaction_bytes_limit: 274877906944
-2019/05/10-14:52:33.527215 ef4       Options.rate_limit_delay_max_milliseconds: 100
-2019/05/10-14:52:33.527220 ef4                Options.disable_auto_compactions: 0
-2019/05/10-14:52:33.527225 ef4                        Options.compaction_style: kCompactionStyleLevel
-2019/05/10-14:52:33.527230 ef4                          Options.compaction_pri: kByCompensatedSize
-2019/05/10-14:52:33.527234 ef4 Options.compaction_options_universal.size_ratio: 1
-2019/05/10-14:52:33.527238 ef4 Options.compaction_options_universal.min_merge_width: 2
-2019/05/10-14:52:33.527243 ef4 Options.compaction_options_universal.max_merge_width: 4294967295
-2019/05/10-14:52:33.527247 ef4 Options.compaction_options_universal.max_size_amplification_percent: 200
-2019/05/10-14:52:33.527252 ef4 Options.compaction_options_universal.compression_size_percent: -1
-2019/05/10-14:52:33.527257 ef4 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
-2019/05/10-14:52:33.527262 ef4 Options.compaction_options_fifo.max_table_files_size: 1073741824
-2019/05/10-14:52:33.527266 ef4 Options.compaction_options_fifo.allow_compaction: 0
-2019/05/10-14:52:33.527270 ef4 Options.compaction_options_fifo.ttl: 0
-2019/05/10-14:52:33.527274 ef4                   Options.table_properties_collectors: 
-2019/05/10-14:52:33.527279 ef4                   Options.inplace_update_support: 0
-2019/05/10-14:52:33.527283 ef4                 Options.inplace_update_num_locks: 10000
-2019/05/10-14:52:33.527288 ef4               Options.memtable_prefix_bloom_size_ratio: 0.000000
-2019/05/10-14:52:33.527292 ef4   Options.memtable_huge_page_size: 0
-2019/05/10-14:52:33.527296 ef4                           Options.bloom_locality: 0
-2019/05/10-14:52:33.527301 ef4                    Options.max_successive_merges: 0
-2019/05/10-14:52:33.527305 ef4                Options.optimize_filters_for_hits: 0
-2019/05/10-14:52:33.527310 ef4                Options.paranoid_file_checks: 0
-2019/05/10-14:52:33.527315 ef4                Options.force_consistency_checks: 0
-2019/05/10-14:52:33.527320 ef4                Options.report_bg_io_stats: 0
+2019/07/15-09:56:24.129109 c30        Options.write_buffer_size: 67108864
+2019/07/15-09:56:24.129114 c30  Options.max_write_buffer_number: 2
+2019/07/15-09:56:24.129118 c30          Options.compression: NoCompression
+2019/07/15-09:56:24.129144 c30                  Options.bottommost_compression: Disabled
+2019/07/15-09:56:24.129150 c30       Options.prefix_extractor: nullptr
+2019/07/15-09:56:24.129155 c30   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2019/07/15-09:56:24.129159 c30             Options.num_levels: 7
+2019/07/15-09:56:24.129164 c30        Options.min_write_buffer_number_to_merge: 1
+2019/07/15-09:56:24.129168 c30     Options.max_write_buffer_number_to_maintain: 0
+2019/07/15-09:56:24.129172 c30            Options.compression_opts.window_bits: -14
+2019/07/15-09:56:24.129177 c30                  Options.compression_opts.level: 32767
+2019/07/15-09:56:24.129181 c30               Options.compression_opts.strategy: 0
+2019/07/15-09:56:24.129186 c30         Options.compression_opts.max_dict_bytes: 0
+2019/07/15-09:56:24.129191 c30      Options.level0_file_num_compaction_trigger: 4
+2019/07/15-09:56:24.129195 c30          Options.level0_slowdown_writes_trigger: 20
+2019/07/15-09:56:24.129199 c30              Options.level0_stop_writes_trigger: 36
+2019/07/15-09:56:24.129204 c30                   Options.target_file_size_base: 67108864
+2019/07/15-09:56:24.129208 c30             Options.target_file_size_multiplier: 1
+2019/07/15-09:56:24.129213 c30                Options.max_bytes_for_level_base: 268435456
+2019/07/15-09:56:24.129217 c30 Options.level_compaction_dynamic_level_bytes: 0
+2019/07/15-09:56:24.129222 c30          Options.max_bytes_for_level_multiplier: 10.000000
+2019/07/15-09:56:24.129237 c30 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2019/07/15-09:56:24.129242 c30 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2019/07/15-09:56:24.129246 c30 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2019/07/15-09:56:24.129251 c30 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2019/07/15-09:56:24.129255 c30 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2019/07/15-09:56:24.129260 c30 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2019/07/15-09:56:24.129264 c30 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2019/07/15-09:56:24.129269 c30       Options.max_sequential_skip_in_iterations: 8
+2019/07/15-09:56:24.129273 c30                    Options.max_compaction_bytes: 1677721600
+2019/07/15-09:56:24.129278 c30                        Options.arena_block_size: 8388608
+2019/07/15-09:56:24.129282 c30   Options.soft_pending_compaction_bytes_limit: 68719476736
+2019/07/15-09:56:24.129287 c30   Options.hard_pending_compaction_bytes_limit: 274877906944
+2019/07/15-09:56:24.129292 c30       Options.rate_limit_delay_max_milliseconds: 100
+2019/07/15-09:56:24.129296 c30                Options.disable_auto_compactions: 0
+2019/07/15-09:56:24.129301 c30                        Options.compaction_style: kCompactionStyleLevel
+2019/07/15-09:56:24.129307 c30                          Options.compaction_pri: kByCompensatedSize
+2019/07/15-09:56:24.129312 c30 Options.compaction_options_universal.size_ratio: 1
+2019/07/15-09:56:24.129316 c30 Options.compaction_options_universal.min_merge_width: 2
+2019/07/15-09:56:24.129320 c30 Options.compaction_options_universal.max_merge_width: 4294967295
+2019/07/15-09:56:24.129325 c30 Options.compaction_options_universal.max_size_amplification_percent: 200
+2019/07/15-09:56:24.129330 c30 Options.compaction_options_universal.compression_size_percent: -1
+2019/07/15-09:56:24.129335 c30 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2019/07/15-09:56:24.129339 c30 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2019/07/15-09:56:24.129344 c30 Options.compaction_options_fifo.allow_compaction: 0
+2019/07/15-09:56:24.129349 c30 Options.compaction_options_fifo.ttl: 0
+2019/07/15-09:56:24.129353 c30                   Options.table_properties_collectors: 
+2019/07/15-09:56:24.129358 c30                   Options.inplace_update_support: 0
+2019/07/15-09:56:24.129362 c30                 Options.inplace_update_num_locks: 10000
+2019/07/15-09:56:24.129367 c30               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2019/07/15-09:56:24.129371 c30   Options.memtable_huge_page_size: 0
+2019/07/15-09:56:24.129377 c30                           Options.bloom_locality: 0
+2019/07/15-09:56:24.129383 c30                    Options.max_successive_merges: 0
+2019/07/15-09:56:24.129388 c30                Options.optimize_filters_for_hits: 0
+2019/07/15-09:56:24.129392 c30                Options.paranoid_file_checks: 0
+2019/07/15-09:56:24.129396 c30                Options.force_consistency_checks: 0
+2019/07/15-09:56:24.129401 c30                Options.report_bg_io_stats: 0

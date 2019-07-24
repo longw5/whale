@@ -15,7 +15,7 @@ public class TestRocksDB {
         options.setInfoLogLevel(InfoLogLevel.ERROR_LEVEL);
         RocksDB rocksDB = RocksDB.open(options, "./rocksDbData");
 
-        rocksDB.put("11111111".getBytes(Charset.forName("UTF-8")), "22222222222".getBytes(Charset.forName("UTF-8")));
+        rocksDB.put("11111111".getBytes(Charset.forName("UTF-8")), "222222222223333".getBytes(Charset.forName("UTF-8")));
         
         byte[] bs = rocksDB.get("11111111".getBytes(Charset.forName("UTF-8")));
         
