@@ -34,6 +34,10 @@
 		<module>whale-web</module>
     <module>whale-hdfs</module>
     <module>whale-listener</module>
+    <module>whale-web-test</module>
+    <module>whale-spark</module>
+    <module>whale-rocksdb-hdfs</module>
+    <module>whale-testrocks</module>
   </modules>
 
 	<properties>

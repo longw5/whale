@@ -1,0 +1,81 @@
+2019/10/08-14:40:31.901974 26c RocksDB version: 5.13.2
+2019/10/08-14:40:31.902098 26c Git sha rocksdb_build_git_sha:@d25ca5fd49e7e523be91974ac951fb4265df57ec@
+2019/10/08-14:40:31.902142 26c Compile date May 31 2018
+2019/10/08-14:40:31.902185 26c DB SUMMARY
+2019/10/08-14:40:31.902419 26c SST files in ./rocksDbData_not_found dir, Total Num: 0, files: 
+2019/10/08-14:40:31.902461 26c Write Ahead Log file in ./rocksDbData_not_found: 
+2019/10/08-14:40:31.902489 26c                         Options.error_if_exists: 0
+2019/10/08-14:40:31.902530 26c                       Options.create_if_missing: 0
+2019/10/08-14:40:31.902557 26c                         Options.paranoid_checks: 1
+2019/10/08-14:40:31.902583 26c                                     Options.env: 00000000005F90E0
+2019/10/08-14:40:31.917374 26c                                Options.info_log: 0000000029718FD0
+2019/10/08-14:40:31.917389 26c                Options.max_file_opening_threads: 16
+2019/10/08-14:40:31.917393 26c                              Options.statistics: 0000000000000000
+2019/10/08-14:40:31.917397 26c                               Options.use_fsync: 0
+2019/10/08-14:40:31.917401 26c                       Options.max_log_file_size: 0
+2019/10/08-14:40:31.917405 26c                  Options.max_manifest_file_size: 18446744073709551615
+2019/10/08-14:40:31.917409 26c                   Options.log_file_time_to_roll: 0
+2019/10/08-14:40:31.917421 26c                       Options.keep_log_file_num: 1000
+2019/10/08-14:40:31.917425 26c                    Options.recycle_log_file_num: 0
+2019/10/08-14:40:31.917429 26c                         Options.allow_fallocate: 1
+2019/10/08-14:40:31.917433 26c                        Options.allow_mmap_reads: 0
+2019/10/08-14:40:31.917436 26c                       Options.allow_mmap_writes: 0
+2019/10/08-14:40:31.917440 26c                        Options.use_direct_reads: 0
+2019/10/08-14:40:31.917468 26c                        Options.use_direct_io_for_flush_and_compaction: 0
+2019/10/08-14:40:31.917472 26c          Options.create_missing_column_families: 0
+2019/10/08-14:40:31.917476 26c                              Options.db_log_dir: 
+2019/10/08-14:40:31.917480 26c                                 Options.wal_dir: ./rocksDbData_not_found
+2019/10/08-14:40:31.917484 26c                Options.table_cache_numshardbits: 6
+2019/10/08-14:40:31.917488 26c                      Options.max_subcompactions: 1
+2019/10/08-14:40:31.917492 26c                  Options.max_background_flushes: -1
+2019/10/08-14:40:31.917514 26c                         Options.WAL_ttl_seconds: 0
+2019/10/08-14:40:31.917517 26c                       Options.WAL_size_limit_MB: 0
+2019/10/08-14:40:31.917521 26c             Options.manifest_preallocation_size: 4194304
+2019/10/08-14:40:31.917525 26c                     Options.is_fd_close_on_exec: 1
+2019/10/08-14:40:31.917528 26c                   Options.advise_random_on_open: 1
+2019/10/08-14:40:31.917532 26c                    Options.db_write_buffer_size: 0
+2019/10/08-14:40:31.917536 26c                    Options.write_buffer_manager: 000000002972B760
+2019/10/08-14:40:31.917539 26c         Options.access_hint_on_compaction_start: 1
+2019/10/08-14:40:31.917543 26c  Options.new_table_reader_for_compaction_inputs: 0
+2019/10/08-14:40:31.917547 26c           Options.random_access_max_buffer_size: 1048576
+2019/10/08-14:40:31.917550 26c                      Options.use_adaptive_mutex: 0
+2019/10/08-14:40:31.917554 26c                            Options.rate_limiter: 0000000000000000
+2019/10/08-14:40:31.917558 26c     Options.sst_file_manager.rate_bytes_per_sec: 0
+2019/10/08-14:40:31.917562 26c                       Options.wal_recovery_mode: 2
+2019/10/08-14:40:31.917565 26c                  Options.enable_thread_tracking: 0
+2019/10/08-14:40:31.917569 26c                  Options.enable_pipelined_write: 0
+2019/10/08-14:40:31.917572 26c         Options.allow_concurrent_memtable_write: 1
+2019/10/08-14:40:31.917576 26c      Options.enable_write_thread_adaptive_yield: 1
+2019/10/08-14:40:31.917580 26c             Options.write_thread_max_yield_usec: 100
+2019/10/08-14:40:31.917611 26c            Options.write_thread_slow_yield_usec: 3
+2019/10/08-14:40:31.917617 26c                               Options.row_cache: None
+2019/10/08-14:40:31.917621 26c                              Options.wal_filter: None
+2019/10/08-14:40:31.917625 26c             Options.avoid_flush_during_recovery: 0
+2019/10/08-14:40:31.917628 26c             Options.allow_ingest_behind: 0
+2019/10/08-14:40:31.917641 26c             Options.preserve_deletes: 0
+2019/10/08-14:40:31.917645 26c             Options.two_write_queues: 0
+2019/10/08-14:40:31.917649 26c             Options.manual_wal_flush: 0
+2019/10/08-14:40:31.917652 26c             Options.max_background_jobs: 2
+2019/10/08-14:40:31.917656 26c             Options.max_background_compactions: -1
+2019/10/08-14:40:31.917660 26c             Options.avoid_flush_during_shutdown: 0
+2019/10/08-14:40:31.917663 26c           Options.writable_file_max_buffer_size: 1048576
+2019/10/08-14:40:31.917667 26c             Options.delayed_write_rate : 16777216
+2019/10/08-14:40:31.917671 26c             Options.max_total_wal_size: 0
+2019/10/08-14:40:31.917674 26c             Options.delete_obsolete_files_period_micros: 21600000000
+2019/10/08-14:40:31.917678 26c                   Options.stats_dump_period_sec: 600
+2019/10/08-14:40:31.917682 26c                          Options.max_open_files: -1
+2019/10/08-14:40:31.917686 26c                          Options.bytes_per_sync: 0
+2019/10/08-14:40:31.917689 26c                      Options.wal_bytes_per_sync: 0
+2019/10/08-14:40:31.917693 26c       Options.compaction_readahead_size: 0
+2019/10/08-14:40:31.917697 26c Compression algorithms supported:
+2019/10/08-14:40:31.917705 26c 	kZSTD supported: 0
+2019/10/08-14:40:31.917709 26c 	kSnappyCompression supported: 0
+2019/10/08-14:40:31.917713 26c 	kBZip2Compression supported: 0
+2019/10/08-14:40:31.917716 26c 	kZlibCompression supported: 0
+2019/10/08-14:40:31.917720 26c 	kLZ4Compression supported: 0
+2019/10/08-14:40:31.917723 26c 	kXpressCompression supported: 0
+2019/10/08-14:40:31.917727 26c 	kLZ4HCCompression supported: 0
+2019/10/08-14:40:31.917730 26c 	kZSTDNotFinalCompression supported: 0
+2019/10/08-14:40:31.917741 26c Fast CRC32 supported: Supported on x86
+2019/10/08-14:40:31.917969 26c [c:\users\aretter\code\rocksdb\db\db_impl.cc:252] Shutdown: canceling all background work
+2019/10/08-14:40:31.918026 26c [c:\users\aretter\code\rocksdb\db\db_impl.cc:395] Shutdown complete

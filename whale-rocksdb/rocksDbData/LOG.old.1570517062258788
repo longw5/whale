@@ -1,0 +1,186 @@
+2019/10/08-14:44:22.210792 3afc RocksDB version: 5.13.2
+2019/10/08-14:44:22.210839 3afc Git sha rocksdb_build_git_sha:@d25ca5fd49e7e523be91974ac951fb4265df57ec@
+2019/10/08-14:44:22.210852 3afc Compile date May 31 2018
+2019/10/08-14:44:22.210866 3afc DB SUMMARY
+2019/10/08-14:44:22.210967 3afc CURRENT file:  CURRENT
+2019/10/08-14:44:22.210980 3afc IDENTITY file:  IDENTITY
+2019/10/08-14:44:22.210999 3afc MANIFEST file:  MANIFEST-000023 size: 305 Bytes
+2019/10/08-14:44:22.211010 3afc SST files in ./rocksDbData dir, Total Num: 6, files: 000004.sst 000007.sst 000010.sst 000013.sst 000019.sst 000022.sst 
+2019/10/08-14:44:22.211019 3afc Write Ahead Log file in ./rocksDbData: 000024.log size: 0 ; 
+2019/10/08-14:44:22.211029 3afc                         Options.error_if_exists: 0
+2019/10/08-14:44:22.225925 3afc                       Options.create_if_missing: 1
+2019/10/08-14:44:22.225940 3afc                         Options.paranoid_checks: 1
+2019/10/08-14:44:22.225944 3afc                                     Options.env: 0000000001410170
+2019/10/08-14:44:22.225948 3afc                                Options.info_log: 0000000029E23240
+2019/10/08-14:44:22.225953 3afc                Options.max_file_opening_threads: 16
+2019/10/08-14:44:22.225956 3afc                              Options.statistics: 0000000001412730
+2019/10/08-14:44:22.225960 3afc                               Options.use_fsync: 0
+2019/10/08-14:44:22.225964 3afc                       Options.max_log_file_size: 0
+2019/10/08-14:44:22.225968 3afc                  Options.max_manifest_file_size: 18446744073709551615
+2019/10/08-14:44:22.225972 3afc                   Options.log_file_time_to_roll: 0
+2019/10/08-14:44:22.225976 3afc                       Options.keep_log_file_num: 1000
+2019/10/08-14:44:22.225980 3afc                    Options.recycle_log_file_num: 0
+2019/10/08-14:44:22.225983 3afc                         Options.allow_fallocate: 1
+2019/10/08-14:44:22.225987 3afc                        Options.allow_mmap_reads: 1
+2019/10/08-14:44:22.225991 3afc                       Options.allow_mmap_writes: 0
+2019/10/08-14:44:22.225995 3afc                        Options.use_direct_reads: 0
+2019/10/08-14:44:22.225998 3afc                        Options.use_direct_io_for_flush_and_compaction: 0
+2019/10/08-14:44:22.226002 3afc          Options.create_missing_column_families: 0
+2019/10/08-14:44:22.226006 3afc                              Options.db_log_dir: 
+2019/10/08-14:44:22.226010 3afc                                 Options.wal_dir: ./rocksDbData
+2019/10/08-14:44:22.226014 3afc                Options.table_cache_numshardbits: 6
+2019/10/08-14:44:22.226018 3afc                      Options.max_subcompactions: 1
+2019/10/08-14:44:22.226021 3afc                  Options.max_background_flushes: -1
+2019/10/08-14:44:22.226030 3afc                         Options.WAL_ttl_seconds: 0
+2019/10/08-14:44:22.226034 3afc                       Options.WAL_size_limit_MB: 0
+2019/10/08-14:44:22.226037 3afc             Options.manifest_preallocation_size: 4194304
+2019/10/08-14:44:22.226041 3afc                     Options.is_fd_close_on_exec: 1
+2019/10/08-14:44:22.226045 3afc                   Options.advise_random_on_open: 1
+2019/10/08-14:44:22.226048 3afc                    Options.db_write_buffer_size: 0
+2019/10/08-14:44:22.226052 3afc                    Options.write_buffer_manager: 0000000029E57580
+2019/10/08-14:44:22.226056 3afc         Options.access_hint_on_compaction_start: 1
+2019/10/08-14:44:22.226059 3afc  Options.new_table_reader_for_compaction_inputs: 0
+2019/10/08-14:44:22.226063 3afc           Options.random_access_max_buffer_size: 1048576
+2019/10/08-14:44:22.226067 3afc                      Options.use_adaptive_mutex: 0
+2019/10/08-14:44:22.226070 3afc                            Options.rate_limiter: 0000000001432600
+2019/10/08-14:44:22.226074 3afc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2019/10/08-14:44:22.226078 3afc                       Options.wal_recovery_mode: 2
+2019/10/08-14:44:22.226081 3afc                  Options.enable_thread_tracking: 0
+2019/10/08-14:44:22.226085 3afc                  Options.enable_pipelined_write: 0
+2019/10/08-14:44:22.226117 3afc         Options.allow_concurrent_memtable_write: 1
+2019/10/08-14:44:22.226123 3afc      Options.enable_write_thread_adaptive_yield: 1
+2019/10/08-14:44:22.226127 3afc             Options.write_thread_max_yield_usec: 100
+2019/10/08-14:44:22.226130 3afc            Options.write_thread_slow_yield_usec: 3
+2019/10/08-14:44:22.226134 3afc                               Options.row_cache: None
+2019/10/08-14:44:22.226138 3afc                              Options.wal_filter: None
+2019/10/08-14:44:22.226142 3afc             Options.avoid_flush_during_recovery: 0
+2019/10/08-14:44:22.226145 3afc             Options.allow_ingest_behind: 0
+2019/10/08-14:44:22.226159 3afc             Options.preserve_deletes: 0
+2019/10/08-14:44:22.226163 3afc             Options.two_write_queues: 0
+2019/10/08-14:44:22.226166 3afc             Options.manual_wal_flush: 0
+2019/10/08-14:44:22.226170 3afc             Options.max_background_jobs: 2
+2019/10/08-14:44:22.226174 3afc             Options.max_background_compactions: 10
+2019/10/08-14:44:22.226177 3afc             Options.avoid_flush_during_shutdown: 0
+2019/10/08-14:44:22.226181 3afc           Options.writable_file_max_buffer_size: 1048576
+2019/10/08-14:44:22.226185 3afc             Options.delayed_write_rate : 10000000
+2019/10/08-14:44:22.226188 3afc             Options.max_total_wal_size: 0
+2019/10/08-14:44:22.226192 3afc             Options.delete_obsolete_files_period_micros: 21600000000
+2019/10/08-14:44:22.226196 3afc                   Options.stats_dump_period_sec: 600
+2019/10/08-14:44:22.226199 3afc                          Options.max_open_files: -1
+2019/10/08-14:44:22.226203 3afc                          Options.bytes_per_sync: 1048576
+2019/10/08-14:44:22.226207 3afc                      Options.wal_bytes_per_sync: 0
+2019/10/08-14:44:22.226210 3afc       Options.compaction_readahead_size: 0
+2019/10/08-14:44:22.226214 3afc Compression algorithms supported:
+2019/10/08-14:44:22.226223 3afc 	kZSTD supported: 0
+2019/10/08-14:44:22.226227 3afc 	kSnappyCompression supported: 0
+2019/10/08-14:44:22.226230 3afc 	kBZip2Compression supported: 0
+2019/10/08-14:44:22.226234 3afc 	kZlibCompression supported: 0
+2019/10/08-14:44:22.226237 3afc 	kLZ4Compression supported: 0
+2019/10/08-14:44:22.226241 3afc 	kXpressCompression supported: 0
+2019/10/08-14:44:22.226244 3afc 	kLZ4HCCompression supported: 0
+2019/10/08-14:44:22.226248 3afc 	kZSTDNotFinalCompression supported: 0
+2019/10/08-14:44:22.226259 3afc Fast CRC32 supported: Supported on x86
+2019/10/08-14:44:22.226611 3afc [c:\users\aretter\code\rocksdb\db\version_set.cc:3050] Recovering from manifest file: MANIFEST-000023
+2019/10/08-14:44:22.226722 3afc [c:\users\aretter\code\rocksdb\db\column_family.cc:433] --------------- Options for column family [default]:
+2019/10/08-14:44:22.226734 3afc               Options.comparator: leveldb.BytewiseComparator
+2019/10/08-14:44:22.226738 3afc           Options.merge_operator: None
+2019/10/08-14:44:22.226741 3afc        Options.compaction_filter: None
+2019/10/08-14:44:22.226745 3afc        Options.compaction_filter_factory: None
+2019/10/08-14:44:22.226749 3afc         Options.memtable_factory: SkipListFactory
+2019/10/08-14:44:22.226752 3afc            Options.table_factory: BlockBasedTable
+2019/10/08-14:44:22.226791 3afc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000000013E48A0)
+  cache_index_and_filter_blocks: 1
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 0
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0000000001411FC0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 65536
+    num_shard_bits : 10
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 5
+  block_restart_interval: 10
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 0
+  enable_index_compression: 1
+2019/10/08-14:44:22.226819 3afc        Options.write_buffer_size: 65536
+2019/10/08-14:44:22.226824 3afc  Options.max_write_buffer_number: 3
+2019/10/08-14:44:22.226828 3afc          Options.compression: NoCompression
+2019/10/08-14:44:22.226832 3afc                  Options.bottommost_compression: Disabled
+2019/10/08-14:44:22.226836 3afc       Options.prefix_extractor: nullptr
+2019/10/08-14:44:22.226839 3afc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2019/10/08-14:44:22.226843 3afc             Options.num_levels: 7
+2019/10/08-14:44:22.226846 3afc        Options.min_write_buffer_number_to_merge: 1
+2019/10/08-14:44:22.226850 3afc     Options.max_write_buffer_number_to_maintain: 0
+2019/10/08-14:44:22.226854 3afc            Options.compression_opts.window_bits: -14
+2019/10/08-14:44:22.226857 3afc                  Options.compression_opts.level: 32767
+2019/10/08-14:44:22.226861 3afc               Options.compression_opts.strategy: 0
+2019/10/08-14:44:22.226865 3afc         Options.compression_opts.max_dict_bytes: 0
+2019/10/08-14:44:22.226868 3afc      Options.level0_file_num_compaction_trigger: 4
+2019/10/08-14:44:22.226872 3afc          Options.level0_slowdown_writes_trigger: 20
+2019/10/08-14:44:22.226876 3afc              Options.level0_stop_writes_trigger: 36
+2019/10/08-14:44:22.226879 3afc                   Options.target_file_size_base: 67108864
+2019/10/08-14:44:22.226883 3afc             Options.target_file_size_multiplier: 1
+2019/10/08-14:44:22.226887 3afc                Options.max_bytes_for_level_base: 268435456
+2019/10/08-14:44:22.226890 3afc Options.level_compaction_dynamic_level_bytes: 0
+2019/10/08-14:44:22.226894 3afc          Options.max_bytes_for_level_multiplier: 10.000000
+2019/10/08-14:44:22.226904 3afc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2019/10/08-14:44:22.226908 3afc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2019/10/08-14:44:22.226911 3afc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2019/10/08-14:44:22.226915 3afc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2019/10/08-14:44:22.226919 3afc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2019/10/08-14:44:22.226922 3afc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2019/10/08-14:44:22.226926 3afc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2019/10/08-14:44:22.226930 3afc       Options.max_sequential_skip_in_iterations: 8
+2019/10/08-14:44:22.226933 3afc                    Options.max_compaction_bytes: 1677721600
+2019/10/08-14:44:22.226937 3afc                        Options.arena_block_size: 8192
+2019/10/08-14:44:22.226941 3afc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2019/10/08-14:44:22.226944 3afc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2019/10/08-14:44:22.226948 3afc       Options.rate_limit_delay_max_milliseconds: 100
+2019/10/08-14:44:22.226952 3afc                Options.disable_auto_compactions: 0
+2019/10/08-14:44:22.226956 3afc                        Options.compaction_style: kCompactionStyleUniversal
+2019/10/08-14:44:22.226960 3afc                          Options.compaction_pri: kByCompensatedSize
+2019/10/08-14:44:22.226964 3afc Options.compaction_options_universal.size_ratio: 1
+2019/10/08-14:44:22.226968 3afc Options.compaction_options_universal.min_merge_width: 2
+2019/10/08-14:44:22.226971 3afc Options.compaction_options_universal.max_merge_width: 4294967295
+2019/10/08-14:44:22.226975 3afc Options.compaction_options_universal.max_size_amplification_percent: 200
+2019/10/08-14:44:22.226979 3afc Options.compaction_options_universal.compression_size_percent: -1
+2019/10/08-14:44:22.226983 3afc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2019/10/08-14:44:22.226987 3afc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2019/10/08-14:44:22.226991 3afc Options.compaction_options_fifo.allow_compaction: 0
+2019/10/08-14:44:22.226995 3afc Options.compaction_options_fifo.ttl: 0
+2019/10/08-14:44:22.226999 3afc                   Options.table_properties_collectors: 
+2019/10/08-14:44:22.227003 3afc                   Options.inplace_update_support: 0
+2019/10/08-14:44:22.227007 3afc                 Options.inplace_update_num_locks: 10000
+2019/10/08-14:44:22.227010 3afc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2019/10/08-14:44:22.227014 3afc   Options.memtable_huge_page_size: 0
+2019/10/08-14:44:22.227018 3afc                           Options.bloom_locality: 0
+2019/10/08-14:44:22.227022 3afc                    Options.max_successive_merges: 0
+2019/10/08-14:44:22.227025 3afc                Options.optimize_filters_for_hits: 0
+2019/10/08-14:44:22.227029 3afc                Options.paranoid_file_checks: 0
+2019/10/08-14:44:22.227032 3afc                Options.force_consistency_checks: 0
+2019/10/08-14:44:22.227036 3afc                Options.report_bg_io_stats: 0
+2019/10/08-14:44:22.228264 3afc [c:\users\aretter\code\rocksdb\db\version_set.cc:3316] Recovered from manifest file:./rocksDbData/MANIFEST-000023 succeeded,manifest_file_number is 23, next_file_number is 25, last_sequence is 6, log_number is 0,prev_log_number is 0,max_column_family is 0
+2019/10/08-14:44:22.228279 3afc [c:\users\aretter\code\rocksdb\db\version_set.cc:3324] Column family [default] (ID 0), log number is 22
+2019/10/08-14:44:22.228463 3afc EVENT_LOG_v1 {"time_micros": 1570517062228427, "job": 1, "event": "recovery_started", "log_files": [24]}
+2019/10/08-14:44:22.228471 3afc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:541] Recovering log #24 mode 2
+2019/10/08-14:44:22.228542 3afc [c:\users\aretter\code\rocksdb\db\version_set.cc:2825] Creating manifest 26
+2019/10/08-14:44:22.236392 3afc EVENT_LOG_v1 {"time_micros": 1570517062236385, "job": 1, "event": "recovery_finished"}
+2019/10/08-14:44:22.245109 3afc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1188] DB pointer 0000000029EA4180
+2019/10/08-14:44:22.245604 3afc [c:\users\aretter\code\rocksdb\db\db_impl.cc:252] Shutdown: canceling all background work
+2019/10/08-14:44:22.253515 3afc [c:\users\aretter\code\rocksdb\db\db_impl.cc:395] Shutdown complete
