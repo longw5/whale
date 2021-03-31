@@ -20,7 +20,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <dep.antlr.version>4.7.1</dep.antlr.version>
-        <dep.guava.version>26.0-jre</dep.guava.version>
+        <dep.guava.version>29.0-jre</dep.guava.version>
         <dep.testng.version>6.10</dep.testng.version>
         <dep.assertj-core.version>3.8.0</dep.assertj-core.version>
     </properties>
